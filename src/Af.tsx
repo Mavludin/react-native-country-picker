@@ -3,7 +3,7 @@ import Svg, {G, Path, Use} from 'react-native-svg';
 
 export const AfIcon = () => {
   return (
-    <Svg width={10} height={10} viewBox="0 0 512 512">
+    <Svg width={14} height={14} viewBox="0 0 512 512">
       <G fillRule="evenodd" strokeWidth="1pt">
         <Path d="M0 0h512v512H0z" />
         <Path fill="#090" d="M341.3 0H512v512H341.3z" />
