@@ -12,7 +12,6 @@ function App() {
 }
 
 const AppContainer = styled.View`
-  padding-horizontal: 20px;
   padding-vertical: 20px;
 `;
 
