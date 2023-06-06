@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 import countryList from '../../counties/ru/countries.json';
 import styled from 'styled-components/native';
 import {Flag} from '../Flag/Flag';
 import {FlatList} from 'react-native';
+import {getCountry} from 'react-native-localize';
 
 type Country = {
   capital: string;
@@ -15,23 +16,32 @@ type Country = {
   name: string;
 };
 
+const defaultCountryCode = getCountry().toLocaleLowerCase();
+
 export const Countries = () => {
+  const [selectedCountry, setSelectedCountry] = useState(() => {
+    return countryList.find(country => country.alpha2 === defaultCountryCode);
+  });
+
   return (
     <>
       <Title>Выберите страну</Title>
 
       <Container>
         <FlatList
-          data={countryList}
+          data={[selectedCountry, ...countryList]}
           renderItem={({item: country}) => (
             <Country>
               <Flag />
               <CountryButton>
-                <CountryName>{country.name}</CountryName>
+                <CountryName
+                  isBold={selectedCountry?.alpha2 === country?.alpha2}>
+                  {country?.name}
+                </CountryName>
               </CountryButton>
             </Country>
           )}
-          keyExtractor={country => country.alpha2}
+          keyExtractor={country => country?.alpha2 || ''}
         />
       </Container>
     </>
@@ -45,7 +55,7 @@ const Title = styled.Text`
   color: black;
 
   border-color: #ccc;
-  border-bottom-width: 1px;
+  border-width: 1px;
 
   margin-bottom: 15px;
   padding-bottom: 5px;
@@ -65,8 +75,10 @@ const Country = styled.View`
 
 const CountryButton = styled.TouchableOpacity``;
 
-const CountryName = styled.Text`
+const CountryName = styled.Text<{isBold?: boolean}>`
   font-size: 22px;
+
+  font-weight: ${({isBold}) => (isBold ? '800' : 'normal')};
 
   margin-left: 10px;
 `;

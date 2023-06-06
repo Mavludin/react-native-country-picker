@@ -2,12 +2,15 @@ import React from 'react';
 import styled from 'styled-components/native';
 
 import {Countries} from './components/Countries/Countries';
+import {SafeAreaView} from 'react-native';
 
 function App() {
   return (
-    <AppContainer>
-      <Countries />
-    </AppContainer>
+    <SafeAreaView>
+      <AppContainer>
+        <Countries />
+      </AppContainer>
+    </SafeAreaView>
   );
 }
 
