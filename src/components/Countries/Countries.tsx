@@ -7,21 +7,26 @@ import {FlatList} from 'react-native';
 import {getCountry} from 'react-native-localize';
 
 type Country = {
-  capital: string;
-  code: string;
-  continent: string;
-  flag_1x1: string;
-  flag_4x3: string;
-  iso: boolean;
+  id: number;
+  alpha2: string;
+  alpha3: string;
   name: string;
 };
 
-const defaultCountryCode = getCountry().toLocaleLowerCase();
+const defaultCountry = () => {
+  return countryList.find(
+    country => country.alpha2 === getCountry().toLocaleLowerCase(),
+  );
+};
 
 export const Countries = () => {
-  const [selectedCountry, setSelectedCountry] = useState(() => {
-    return countryList.find(country => country.alpha2 === defaultCountryCode);
-  });
+  const [selectedCountry, setSelectedCountry] = useState<Country | undefined>(
+    defaultCountry,
+  );
+
+  const onSelect = (item?: Country) => {
+    setSelectedCountry(item);
+  };
 
   return (
     <>
@@ -29,11 +34,17 @@ export const Countries = () => {
 
       <Container>
         <FlatList
-          data={[selectedCountry, ...countryList]}
+          data={countryList}
+          ListHeaderComponent={
+            <Country>
+              <Flag />
+              <CountryName isBold>{selectedCountry?.name}</CountryName>
+            </Country>
+          }
           renderItem={({item: country}) => (
             <Country>
               <Flag />
-              <CountryButton>
+              <CountryButton onPress={() => onSelect(country)}>
                 <CountryName
                   isBold={selectedCountry?.alpha2 === country?.alpha2}>
                   {country?.name}
