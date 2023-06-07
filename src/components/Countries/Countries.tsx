@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 
-import countryList from '../../counties/ru/countries.json';
+import countryList from '../../countries/ru/countries.json';
 import styled from 'styled-components/native';
 import {Flag} from '../Flag/Flag';
 import {FlatList} from 'react-native';
-import {getCountry} from 'react-native-localize';
+import {getCountry, getLocales} from 'react-native-localize';
 import {flags} from '../../utils/flags';
 
 type Country = {
@@ -20,6 +20,8 @@ const defaultCountry = () => {
   );
 };
 
+const deviceLanguage = getLocales()[0].languageCode;
+
 export const Countries = () => {
   const [selectedCountry, setSelectedCountry] = useState<Country | undefined>(
     defaultCountry,
@@ -28,6 +30,41 @@ export const Countries = () => {
   const onSelect = (item?: Country) => {
     setSelectedCountry(item);
   };
+
+  const [countries, setCountries] = useState<Country[] | null>(null);
+
+  useEffect(() => {
+    console.log('deviceLanguage', deviceLanguage);
+    if (!deviceLanguage) {
+      return;
+    }
+
+    const importCountries = async () => {
+      try {
+        if (deviceLanguage === 'en') {
+          const data = await import('../../countries/en/countries.json');
+          setCountries(data);
+        } else if (deviceLanguage === 'ru') {
+          const data = await import('../../countries/ru/countries.json');
+          setCountries(data);
+        } else if (deviceLanguage === 'es') {
+          const data = await import('../../countries/es/countries.json');
+          setCountries(data);
+        }
+      } catch (error) {
+        console.error('Error importing countries:', error);
+      }
+    };
+
+    importCountries();
+  }, []);
+
+  console.log(countries);
+
+  if (!countries) {
+    // Loading state
+    return null;
+  }
 
   return (
     <>
