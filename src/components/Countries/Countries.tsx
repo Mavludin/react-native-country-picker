@@ -1,6 +1,5 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useMemo, useState} from 'react';
 
-import countryList from '../../countries/ru/countries.json';
 import styled from 'styled-components/native';
 import {Flag} from '../Flag/Flag';
 import {FlatList} from 'react-native';
@@ -14,27 +13,26 @@ type Country = {
   name: string;
 };
 
-const defaultCountry = () => {
-  return countryList.find(
-    country => country.alpha2.toUpperCase() === getCountry(),
-  );
-};
-
 const deviceLanguage = getLocales()[0].languageCode;
 
 export const Countries = () => {
-  const [selectedCountry, setSelectedCountry] = useState<Country | undefined>(
-    defaultCountry,
-  );
+  const [selectedCountry, setSelectedCountry] = useState<Country | undefined>();
 
-  const onSelect = (item?: Country) => {
+  const onSelect = (item: Country) => {
     setSelectedCountry(item);
   };
 
   const [countries, setCountries] = useState<Country[] | null>(null);
 
+  const defaultCountry = useMemo(() => {
+    if (!countries) return;
+
+    return countries.find(
+      country => country.alpha2.toUpperCase() === getCountry(),
+    );
+  }, [countries]);
+
   useEffect(() => {
-    console.log('deviceLanguage', deviceLanguage);
     if (!deviceLanguage) {
       return;
     }
@@ -43,13 +41,13 @@ export const Countries = () => {
       try {
         if (deviceLanguage === 'en') {
           const data = await import('../../countries/en/countries.json');
-          setCountries(data);
+          setCountries(data.default);
         } else if (deviceLanguage === 'ru') {
           const data = await import('../../countries/ru/countries.json');
-          setCountries(data);
+          setCountries(data.default);
         } else if (deviceLanguage === 'es') {
           const data = await import('../../countries/es/countries.json');
-          setCountries(data);
+          setCountries(data.default);
         }
       } catch (error) {
         console.error('Error importing countries:', error);
@@ -59,12 +57,11 @@ export const Countries = () => {
     importCountries();
   }, []);
 
-  console.log(countries);
+  useEffect(() => {
+    if (selectedCountry) return;
 
-  if (!countries) {
-    // Loading state
-    return null;
-  }
+    setSelectedCountry(defaultCountry);
+  }, [defaultCountry, selectedCountry]);
 
   return (
     <>
@@ -72,7 +69,7 @@ export const Countries = () => {
 
       <Container>
         <FlatList
-          data={countryList}
+          data={countries}
           ListHeaderComponent={
             <Country>
               <Flag imgSrc={flags[selectedCountry?.alpha2 || '']} />
