@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components/native';
 
-export const Flag = () => {
-  return <FlagIcon source={require('../../assets/flags/16x16/af.png')} />;
+type Props = {
+  imgSrc?: string;
+};
+
+export const Flag = ({
+  imgSrc = require('../../assets/flags/16x16/ad.png'),
+}: Props) => {
+  return <FlagIcon source={imgSrc} />;
 };
 
 const FlagIcon = styled.Image`

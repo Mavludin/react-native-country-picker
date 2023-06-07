@@ -5,6 +5,7 @@ import styled from 'styled-components/native';
 import {Flag} from '../Flag/Flag';
 import {FlatList} from 'react-native';
 import {getCountry} from 'react-native-localize';
+import {flags} from '../../utils/flags';
 
 type Country = {
   id: number;
@@ -15,7 +16,7 @@ type Country = {
 
 const defaultCountry = () => {
   return countryList.find(
-    country => country.alpha2 === getCountry().toLocaleLowerCase(),
+    country => country.alpha2.toUpperCase() === getCountry(),
   );
 };
 
@@ -37,13 +38,13 @@ export const Countries = () => {
           data={countryList}
           ListHeaderComponent={
             <Country>
-              <Flag />
+              <Flag imgSrc={flags[selectedCountry?.alpha2 || '']} />
               <CountryName isBold>{selectedCountry?.name}</CountryName>
             </Country>
           }
           renderItem={({item: country}) => (
             <Country>
-              <Flag />
+              <Flag imgSrc={flags[country?.alpha2]} />
               <CountryButton onPress={() => onSelect(country)}>
                 <CountryName
                   isBold={selectedCountry?.alpha2 === country?.alpha2}>
