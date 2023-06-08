@@ -3,58 +3,41 @@ import React, {useEffect, useMemo, useState} from 'react';
 import styled from 'styled-components/native';
 import {Flag} from '../Flag/Flag';
 import {FlatList} from 'react-native';
-import {getCountry, getLocales} from 'react-native-localize';
-import {flags} from '../../utils/flags';
-
-type Country = {
-  id: number;
-  alpha2: string;
-  alpha3: string;
-  name: string;
-};
-
-const deviceLanguage = getLocales()[0].languageCode;
+import {getCountry} from 'react-native-localize';
+import {
+  CountryItem,
+  countriesByLanguage,
+  deviceLanguage,
+  flags,
+} from '../../utils/countries';
 
 export const Countries = () => {
-  const [selectedCountry, setSelectedCountry] = useState<Country | undefined>();
+  const [selectedCountry, setSelectedCountry] = useState<
+    CountryItem | undefined
+  >();
 
-  const onSelect = (item: Country) => {
-    setSelectedCountry(item);
-  };
-
-  const [countries, setCountries] = useState<Country[] | null>(null);
+  const [countries, setCountries] = useState<CountryItem[] | undefined>();
 
   const defaultCountry = useMemo(() => {
     if (!countries) return;
 
-    return countries.find(
+    return countries?.find(
       country => country.alpha2.toUpperCase() === getCountry(),
     );
   }, [countries]);
+
+  const onSelect = (item: CountryItem) => {
+    setSelectedCountry(item);
+  };
 
   useEffect(() => {
     if (!deviceLanguage) {
       return;
     }
 
-    const importCountries = async () => {
-      try {
-        if (deviceLanguage === 'en') {
-          const data = await import('../../countries/en/countries.json');
-          setCountries(data.default);
-        } else if (deviceLanguage === 'ru') {
-          const data = await import('../../countries/ru/countries.json');
-          setCountries(data.default);
-        } else if (deviceLanguage === 'es') {
-          const data = await import('../../countries/es/countries.json');
-          setCountries(data.default);
-        }
-      } catch (error) {
-        console.error('Error importing countries:', error);
-      }
-    };
-
-    importCountries();
+    countriesByLanguage[deviceLanguage]().then(data => {
+      setCountries(data.default);
+    });
   }, []);
 
   useEffect(() => {

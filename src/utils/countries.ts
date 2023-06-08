@@ -1,3 +1,16 @@
+import {getLocales} from 'react-native-localize';
+
+export type LanguageCode = 'ru' | 'es' | 'en';
+
+export type CountryItem = {
+  id: number;
+  alpha2: string;
+  alpha3: string;
+  name: string;
+};
+
+export const deviceLanguage = getLocales()[0].languageCode as LanguageCode;
+
 export const flags: Record<string, string> = {
   ad: require('../assets/flags/16x16/ad.png'),
   ae: require('../assets/flags/16x16/ae.png'),
@@ -192,4 +205,10 @@ export const flags: Record<string, string> = {
   za: require('../assets/flags/16x16/za.png'),
   zm: require('../assets/flags/16x16/zm.png'),
   zw: require('../assets/flags/16x16/zw.png'),
-};
+} as const;
+
+export const countriesByLanguage = {
+  ru: () => import('../countries/ru/countries.json'),
+  es: () => import('../countries/es/countries.json'),
+  en: () => import('../countries/en/countries.json'),
+} as const;
