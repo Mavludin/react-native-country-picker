@@ -1,19 +1,14 @@
-import React, {useEffect, useMemo, useRef, useState} from 'react';
+import React, {useRef, useState} from 'react';
 
-import BottomSheet, {
-  BottomSheetFlatList,
-  BottomSheetTextInput,
-} from '@gorhom/bottom-sheet';
+import BottomSheet, {BottomSheetTextInput} from '@gorhom/bottom-sheet';
 
-import {StyleSheet, View, useWindowDimensions} from 'react-native';
-import {getCountry} from 'react-native-localize';
+import {StyleSheet, View, useWindowDimensions, Text} from 'react-native';
 import {
   CountryItem,
   countriesByLanguage,
   deviceLanguage,
 } from '../../utils/countries';
-import {Country} from '../Country/Country';
-import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
+import {CountryList} from '../CountryList/CountryList';
 
 const SNAP_POINTS = ['10%', '100%'];
 
@@ -22,69 +17,40 @@ export const CountryBottomSheet = () => {
 
   const {height: screenHeight} = useWindowDimensions();
 
-  const [selectedCountry, setSelectedCountry] = useState<
-    CountryItem | undefined
-  >();
+  const [data, setData] = useState<CountryItem[] | null | undefined>(null);
+  const [error, setError] = useState<string | null>(null);
 
-  const [countries, setCountries] = useState<CountryItem[] | undefined>();
+  const importData = () =>
+    countriesByLanguage[deviceLanguage]()
+      .then(json => json.default)
+      .then(setData)
+      .catch(error => {
+        console.error('Error importing data:', error);
+        setError('Error importing data');
+      });
 
-  const defaultCountry = useMemo(() => {
-    if (!countries) return;
+  if (!deviceLanguage) {
+    return null;
+  }
 
-    return countries?.find(
-      country => country.alpha2.toUpperCase() === getCountry(),
-    );
-  }, [countries]);
+  if (!data) {
+    importData();
 
-  const onSelect = (item: CountryItem) => {
-    setSelectedCountry(item);
-  };
+    return null;
+  }
 
-  useEffect(() => {
-    if (!deviceLanguage) {
-      return;
-    }
-
-    countriesByLanguage[deviceLanguage]().then(data => {
-      setCountries(
-        data.default.filter(
-          country => country.alpha2.toUpperCase() !== getCountry(),
-        ),
-      );
-    });
-  }, []);
-
-  useEffect(() => {
-    if (selectedCountry) return;
-
-    setSelectedCountry(defaultCountry);
-  }, [defaultCountry, selectedCountry]);
+  if (error) {
+    <Text>{error}</Text>;
+  }
 
   return (
     <View style={{paddingTop: screenHeight}}>
       <BottomSheet
-        snapPoints={SNAP_POINTS}
         ref={sheetRef}
+        snapPoints={SNAP_POINTS}
         keyboardBehavior="fillParent">
         <BottomSheetTextInput style={styles.input} placeholder="Search" />
-        <BottomSheetFlatList
-          data={countries}
-          ListHeaderComponent={
-            <HeaderCountry selectedCountry={selectedCountry} />
-          }
-          renderItem={({item: country}) => {
-            const isActive = country.alpha2 === selectedCountry?.alpha2;
-            return (
-              <Country
-                isActive={isActive}
-                onSelect={onSelect}
-                country={country}
-              />
-            );
-          }}
-          keyExtractor={country => country?.alpha2 || ''}
-          contentContainerStyle={styles.contentContainer}
-        />
+        <CountryList countries={data} />
       </BottomSheet>
     </View>
   );
@@ -100,8 +66,5 @@ const styles = StyleSheet.create({
     color: '#9A9A9A',
     borderBottomColor: '#CBCBCB',
     borderBottomWidth: 1,
-  },
-  contentContainer: {
-    paddingHorizontal: 10,
   },
 });
