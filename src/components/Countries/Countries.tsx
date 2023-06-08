@@ -2,9 +2,8 @@ import React, {useEffect, useMemo, useRef, useState} from 'react';
 
 import BottomSheet, {BottomSheetFlatList} from '@gorhom/bottom-sheet';
 
-import styled from 'styled-components/native';
 import {Flag} from '../Flag/Flag';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {getCountry} from 'react-native-localize';
 import {
   CountryItem,
@@ -60,20 +59,26 @@ export const Countries = () => {
           ListHeaderComponent={
             <View style={styles.itemContainer}>
               <Flag imgSrc={flags[selectedCountry?.alpha2 || '']} />
-              <CountryName isBold>{selectedCountry?.name}</CountryName>
+              <Text style={styles.coutryName}>{selectedCountry?.name}</Text>
+              <View style={styles.selectedTextContainer}>
+                <Text style={styles.selectedText}>selected</Text>
+              </View>
             </View>
           }
-          renderItem={({item: country}) => (
-            <View style={styles.itemContainer}>
-              <Flag imgSrc={flags[country?.alpha2]} />
-              <CountryButton onPress={() => onSelect(country)}>
-                <CountryName
-                  isBold={selectedCountry?.alpha2 === country?.alpha2}>
-                  {country?.name}
-                </CountryName>
-              </CountryButton>
-            </View>
-          )}
+          renderItem={({item: country}) => {
+            const isActive = country.alpha2 === selectedCountry?.alpha2;
+            return (
+              <View
+                style={
+                  isActive ? styles.activeItemContainer : styles.itemContainer
+                }>
+                <Flag imgSrc={flags[country?.alpha2]} />
+                <TouchableOpacity onPress={() => onSelect(country)}>
+                  <Text style={styles.coutryName}>{country?.name}</Text>
+                </TouchableOpacity>
+              </View>
+            );
+          }}
           keyExtractor={country => country?.alpha2 || ''}
           contentContainerStyle={styles.contentContainer}
         />
@@ -87,21 +92,39 @@ const styles = StyleSheet.create({
     paddingTop: 200,
   },
   contentContainer: {
-    backgroundColor: 'white',
+    paddingLeft: 10,
+    paddingRight: 10,
   },
   itemContainer: {
-    padding: 6,
-    margin: 6,
-    backgroundColor: '#eee',
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 5,
+  },
+  activeItemContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 5,
+    backgroundColor: '#ECECEC',
+  },
+  coutryName: {
+    fontSize: 22,
+    padding: 5,
+    fontWeight: '400',
+    color: 'black',
+    marginLeft: 10,
+  },
+  selectedTextContainer: {
+    backgroundColor: '#D9D9D9',
+    borderRadius: 20,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingTop: 2,
+    paddingBottom: 2,
+    marginLeft: 5,
+  },
+  selectedText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: 'black',
   },
 });
-
-const CountryButton = styled.TouchableOpacity``;
-
-const CountryName = styled.Text<{isBold?: boolean}>`
-  font-size: 22px;
-
-  font-weight: ${({isBold}) => (isBold ? '800' : 'normal')};
-
-  margin-left: 10px;
-`;

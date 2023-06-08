@@ -1,21 +1,22 @@
 import React from 'react';
-import styled from 'styled-components/native';
 
 import {Countries} from './components/Countries/Countries';
-import {SafeAreaView} from 'react-native';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
 
 function App() {
   return (
     <SafeAreaView>
-      <AppContainer>
+      <View style={styles.container}>
         <Countries />
-      </AppContainer>
+      </View>
     </SafeAreaView>
   );
 }
 
-const AppContainer = styled.View`
-  padding-vertical: 20px;
-`;
+const styles = StyleSheet.create({
+  container: {
+    paddingVertical: 20,
+  },
+});
 
 export default App;

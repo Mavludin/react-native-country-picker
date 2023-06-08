@@ -1,17 +1,19 @@
 import React from 'react';
-import styled from 'styled-components/native';
+import {Image, ImageSourcePropType, StyleSheet} from 'react-native';
 
 type Props = {
-  imgSrc?: string;
+  imgSrc?: ImageSourcePropType;
 };
 
 export const Flag = ({
   imgSrc = require('../../assets/flags/16x16/ad.png'),
 }: Props) => {
-  return <FlagIcon source={imgSrc} />;
+  return <Image style={styles.flagIcon} source={imgSrc} />;
 };
 
-const FlagIcon = styled.Image`
-  width: 16px;
-  height: 16px;
-`;
+const styles = StyleSheet.create({
+  flagIcon: {
+    width: 16,
+    height: 16,
+  },
+});
