@@ -5,7 +5,7 @@ type Props = {
   imgSrc?: ImageSourcePropType;
 };
 
-export const Flag = ({
+export const CountryFlag = ({
   imgSrc = require('../../assets/flags/16x16/ad.png'),
 }: Props) => {
   return <Image style={styles.flagIcon} source={imgSrc} />;

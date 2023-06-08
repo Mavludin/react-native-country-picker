@@ -12,7 +12,7 @@ export type CountryItem = {
 
 export const deviceLanguage = getLocales()[0].languageCode as LanguageCode;
 
-export const flags: Record<string, ImageSourcePropType> = {
+export const countryFlags: Record<string, ImageSourcePropType> = {
   ad: require('../assets/flags/16x16/ad.png'),
   ae: require('../assets/flags/16x16/ae.png'),
   af: require('../assets/flags/16x16/af.png'),

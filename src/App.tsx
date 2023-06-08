@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {Countries} from './components/Countries/Countries';
+import {CountryBottomSheet} from './components/CountryBottomSheet/CountryBottomSheet';
 import {SafeAreaView, StyleSheet, View} from 'react-native';
 
 function App() {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-        <Countries />
+        <CountryBottomSheet />
       </View>
     </SafeAreaView>
   );
