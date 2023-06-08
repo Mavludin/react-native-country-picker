@@ -1,8 +1,10 @@
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useEffect, useMemo, useRef, useState} from 'react';
+
+import BottomSheet, {BottomSheetFlatList} from '@gorhom/bottom-sheet';
 
 import styled from 'styled-components/native';
 import {Flag} from '../Flag/Flag';
-import {FlatList} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import {getCountry} from 'react-native-localize';
 import {
   CountryItem,
@@ -11,7 +13,11 @@ import {
   flags,
 } from '../../utils/countries';
 
+const snapPoints = ['25%', '50%', '90%'];
+
 export const Countries = () => {
+  const sheetRef = useRef<BottomSheet>(null);
+
   const [selectedCountry, setSelectedCountry] = useState<
     CountryItem | undefined
   >();
@@ -47,20 +53,18 @@ export const Countries = () => {
   }, [defaultCountry, selectedCountry]);
 
   return (
-    <>
-      <Title>Выберите страну</Title>
-
-      <Container>
-        <FlatList
+    <View style={styles.container}>
+      <BottomSheet snapPoints={snapPoints} ref={sheetRef}>
+        <BottomSheetFlatList
           data={countries}
           ListHeaderComponent={
-            <Country>
+            <View style={styles.itemContainer}>
               <Flag imgSrc={flags[selectedCountry?.alpha2 || '']} />
               <CountryName isBold>{selectedCountry?.name}</CountryName>
-            </Country>
+            </View>
           }
           renderItem={({item: country}) => (
-            <Country>
+            <View style={styles.itemContainer}>
               <Flag imgSrc={flags[country?.alpha2]} />
               <CountryButton onPress={() => onSelect(country)}>
                 <CountryName
@@ -68,39 +72,29 @@ export const Countries = () => {
                   {country?.name}
                 </CountryName>
               </CountryButton>
-            </Country>
+            </View>
           )}
           keyExtractor={country => country?.alpha2 || ''}
+          contentContainerStyle={styles.contentContainer}
         />
-      </Container>
-    </>
+      </BottomSheet>
+    </View>
   );
 };
 
-const Title = styled.Text`
-  font-size: 30px;
-  font-weight: 600;
-
-  color: black;
-
-  border-color: #ccc;
-  border-width: 1px;
-
-  margin-bottom: 15px;
-  padding-bottom: 5px;
-  padding-horizontal: 20px;
-`;
-
-const Container = styled.View`
-  padding-horizontal: 20px;
-`;
-
-const Country = styled.View`
-  flex-direction: row;
-  align-items: center;
-
-  margin-bottom: 5px;
-`;
+const styles = StyleSheet.create({
+  container: {
+    paddingTop: 200,
+  },
+  contentContainer: {
+    backgroundColor: 'white',
+  },
+  itemContainer: {
+    padding: 6,
+    margin: 6,
+    backgroundColor: '#eee',
+  },
+});
 
 const CountryButton = styled.TouchableOpacity``;
 
