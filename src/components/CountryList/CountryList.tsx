@@ -19,19 +19,43 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
     CountryItem | undefined
   >();
 
+  const [filteredList, setFilteredList] = useState<CountryItem[] | null>(null);
+
   const onSelect = (item: CountryItem) => {
     setSelectedCountry(item);
   };
 
+  const handleChange = (text: string) => {
+    if (text.length > 0) {
+      if (Array.isArray(countries)) {
+        const result = [...countries].filter(country => {
+          return country.name.toLocaleLowerCase().includes(text.toLowerCase());
+        });
+
+        setFilteredList(result);
+      }
+
+      return;
+    }
+
+    setFilteredList(null);
+  };
+
   return (
     <>
-      <BottomSheetTextInput style={styles.input} placeholder="Search" />
+      <BottomSheetTextInput
+        onChangeText={handleChange}
+        style={styles.input}
+        placeholder="Search"
+      />
 
       {Array.isArray(countries) ? (
         <BottomSheetFlatList
-          data={countries}
+          data={filteredList ?? countries}
           ListHeaderComponent={
-            <HeaderCountry defaultCountry={defaultCountry} />
+            filteredList ? null : (
+              <HeaderCountry defaultCountry={defaultCountry} />
+            )
           }
           renderItem={({item: country}) => {
             const isActive = country.alpha2 === selectedCountry?.alpha2;
@@ -50,7 +74,9 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
         <BottomSheetFlatList
           data={countries?.[deviceLanguage]}
           ListHeaderComponent={
-            <HeaderCountry defaultCountry={defaultCountry} />
+            filteredList ? null : (
+              <HeaderCountry defaultCountry={defaultCountry} />
+            )
           }
           renderItem={({item: country}) => {
             const isActive = country.alpha2 === selectedCountry?.alpha2;
