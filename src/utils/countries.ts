@@ -22,7 +22,7 @@ export type CountryItem = {
   name: string;
 };
 
-export const deviceLanguage = getLocales()[0].languageCode as LanguageCode;
+export const deviceLanguage = 'ru' as LanguageCode;
 
 export const countryFlags: Record<string, ImageSourcePropType> = {
   AD: require('../assets/flags/16x16/ad.png'),

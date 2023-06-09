@@ -19,7 +19,9 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
     CountryItem | undefined
   >();
 
-  const [filteredList, setFilteredList] = useState<CountryItem[] | null>(null);
+  const [filteredList, setFilteredList] = useState<
+    DoubleCountryItem | SingleCountryItem
+  >();
 
   const onSelect = (item: CountryItem) => {
     setSelectedCountry(item);
@@ -33,12 +35,37 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
         });
 
         setFilteredList(result);
+      } else {
+        const isEnglish = /[a-z]/gi.test(text);
+
+        if (isEnglish) {
+          const deviceLanguageList = [...countries?.[deviceLanguage]];
+
+          const englishList = [...countries?.en];
+
+          const result = englishList?.filter(country => {
+            return country.name
+              ?.toLocaleLowerCase()
+              .includes(text.toLowerCase());
+          }, []);
+
+          const result1 = deviceLanguageList?.filter(country => {
+            return result?.some(item => item.alpha2 === country.alpha2);
+          });
+
+          console.log(result1);
+
+          setFilteredList({
+            ...countries,
+            [deviceLanguage]: result1,
+          });
+        }
       }
 
       return;
     }
 
-    setFilteredList(null);
+    setFilteredList(undefined);
   };
 
   return (
@@ -72,7 +99,7 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
         />
       ) : (
         <BottomSheetFlatList
-          data={countries?.[deviceLanguage]}
+          data={filteredList?.[deviceLanguage] ?? countries?.[deviceLanguage]}
           ListHeaderComponent={
             filteredList ? null : (
               <HeaderCountry defaultCountry={defaultCountry} />
