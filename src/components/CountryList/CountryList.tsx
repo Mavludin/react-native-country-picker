@@ -1,16 +1,16 @@
 import {BottomSheetFlatList, BottomSheetTextInput} from '@gorhom/bottom-sheet';
-import React, {useEffect, useMemo, useState} from 'react';
+import React, {useState} from 'react';
 import {CountryItem} from '../../utils/countries';
 import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
 import {Country} from '../Country/Country';
 import {StyleSheet} from 'react-native';
-import {getCountry} from 'react-native-localize';
 
 type Props = {
   countries: CountryItem[];
+  defaultCountry?: CountryItem;
 };
 
-export const CountryList = ({countries}: Props) => {
+export const CountryList = ({countries, defaultCountry}: Props) => {
   const [selectedCountry, setSelectedCountry] = useState<
     CountryItem | undefined
   >();
@@ -19,27 +19,13 @@ export const CountryList = ({countries}: Props) => {
     setSelectedCountry(item);
   };
 
-  const defaultCountry = useMemo(() => {
-    if (!countries) return;
-
-    return countries?.find(country => country.alpha2 === getCountry());
-  }, [countries]);
-
-  useEffect(() => {
-    if (selectedCountry) return;
-
-    setSelectedCountry(defaultCountry);
-  }, [defaultCountry, selectedCountry]);
-
   return (
     <>
       <BottomSheetTextInput style={styles.input} placeholder="Search" />
 
       <BottomSheetFlatList
         data={countries}
-        ListHeaderComponent={
-          <HeaderCountry selectedCountry={selectedCountry} />
-        }
+        ListHeaderComponent={<HeaderCountry defaultCountry={defaultCountry} />}
         renderItem={({item: country}) => {
           const isActive = country.alpha2 === selectedCountry?.alpha2;
           return (

@@ -9,6 +9,7 @@ import {
   deviceLanguage,
 } from '../../utils/countries';
 import {CountryList} from '../CountryList/CountryList';
+import {getCountry} from 'react-native-localize';
 
 const SNAP_POINTS = ['10%', '100%'];
 
@@ -17,13 +18,20 @@ export const CountryBottomSheet = () => {
 
   const {height: screenHeight} = useWindowDimensions();
 
-  const [data, setData] = useState<CountryItem[] | null | undefined>(null);
+  const [countries, setCountries] = useState<CountryItem[] | undefined>();
+  const [defaultCountry, setDefaultCountry] = useState<CountryItem>();
+
   const [error, setError] = useState<string | null>(null);
 
   const importData = () =>
     countriesByLanguage[deviceLanguage]()
-      .then(json => json.default)
-      .then(setData)
+      .then(json => json.default as CountryItem[])
+      .then(data => {
+        setDefaultCountry(
+          data?.find(country => country.alpha2 === getCountry()),
+        );
+        setCountries(data.filter(country => country.alpha2 !== getCountry()));
+      })
       .catch(error => {
         console.error('Error importing data:', error);
         setError('Error importing data');
@@ -33,7 +41,7 @@ export const CountryBottomSheet = () => {
     return null;
   }
 
-  if (!data) {
+  if (!countries) {
     importData();
 
     return null;
@@ -49,7 +57,7 @@ export const CountryBottomSheet = () => {
         ref={sheetRef}
         snapPoints={SNAP_POINTS}
         keyboardBehavior="fillParent">
-        <CountryList countries={data} />
+        <CountryList countries={countries} defaultCountry={defaultCountry} />
       </BottomSheet>
     </View>
   );

@@ -4,14 +4,14 @@ import {CountryFlag} from '../CountryFlag/CountryFlag';
 import {CountryItem, countryFlags} from '../../utils/countries';
 
 type Props = {
-  selectedCountry?: CountryItem;
+  defaultCountry?: CountryItem;
 };
 
-export const HeaderCountry = ({selectedCountry}: Props) => {
+export const HeaderCountry = ({defaultCountry}: Props) => {
   return (
     <View style={styles.itemContainer}>
-      <CountryFlag imgSrc={countryFlags[selectedCountry?.alpha2 || '']} />
-      <Text style={styles.coutryName}>{selectedCountry?.name}</Text>
+      <CountryFlag imgSrc={countryFlags[defaultCountry?.alpha2 || '']} />
+      <Text style={styles.coutryName}>{defaultCountry?.name}</Text>
       <View style={styles.selectedTextContainer}>
         <Text style={styles.selectedText}>Selected</Text>
       </View>
