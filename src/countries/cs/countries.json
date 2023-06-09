@@ -3,19 +3,19 @@
         "alpha2": "AF",
         "alpha3": "afg",
         "id": 4,
-        "name": "Afganistán"
+        "name": "Afghánistán"
     },
     {
         "alpha2": "AL",
         "alpha3": "alb",
         "id": 8,
-        "name": "Albania"
+        "name": "Albánie"
     },
     {
-        "alpha2": "DE",
-        "alpha3": "deu",
-        "id": 276,
-        "name": "Alemania"
+        "alpha2": "DZ",
+        "alpha3": "dza",
+        "id": 12,
+        "name": "Alžírsko"
     },
     {
         "alpha2": "AD",
@@ -33,19 +33,7 @@
         "alpha2": "AG",
         "alpha3": "atg",
         "id": 28,
-        "name": "Antigua y Barbuda"
-    },
-    {
-        "alpha2": "SA",
-        "alpha3": "sau",
-        "id": 682,
-        "name": "Arabia Saudita"
-    },
-    {
-        "alpha2": "DZ",
-        "alpha3": "dza",
-        "id": 12,
-        "name": "Argelia"
+        "name": "Antigua a Barbuda"
     },
     {
         "alpha2": "AR",
@@ -57,37 +45,37 @@
         "alpha2": "AM",
         "alpha3": "arm",
         "id": 51,
-        "name": "Armenia"
+        "name": "Arménie"
     },
     {
         "alpha2": "AU",
         "alpha3": "aus",
         "id": 36,
-        "name": "Australia"
-    },
-    {
-        "alpha2": "AT",
-        "alpha3": "aut",
-        "id": 40,
-        "name": "Austria"
+        "name": "Austrálie"
     },
     {
         "alpha2": "AZ",
         "alpha3": "aze",
         "id": 31,
-        "name": "Azerbaiyán"
+        "name": "Ázerbájdžán"
     },
     {
         "alpha2": "BS",
         "alpha3": "bhs",
         "id": 44,
-        "name": "Bahamas"
+        "name": "Bahamy"
+    },
+    {
+        "alpha2": "BH",
+        "alpha3": "bhr",
+        "id": 48,
+        "name": "Bahrajn"
     },
     {
         "alpha2": "BD",
         "alpha3": "bgd",
         "id": 50,
-        "name": "Bangladés"
+        "name": "Bangladéš"
     },
     {
         "alpha2": "BB",
@@ -96,70 +84,70 @@
         "name": "Barbados"
     },
     {
-        "alpha2": "BH",
-        "alpha3": "bhr",
-        "id": 48,
-        "name": "Baréin"
-    },
-    {
         "alpha2": "BE",
         "alpha3": "bel",
         "id": 56,
-        "name": "Bélgica"
+        "name": "Belgie"
     },
     {
         "alpha2": "BZ",
         "alpha3": "blz",
         "id": 84,
-        "name": "Belice"
-    },
-    {
-        "alpha2": "BJ",
-        "alpha3": "ben",
-        "id": 204,
-        "name": "Benín"
+        "name": "Belize"
     },
     {
         "alpha2": "BY",
         "alpha3": "blr",
         "id": 112,
-        "name": "Bielorrusia"
+        "name": "Bělorusko"
+    },
+    {
+        "alpha2": "BJ",
+        "alpha3": "ben",
+        "id": 204,
+        "name": "Benin"
+    },
+    {
+        "alpha2": "BT",
+        "alpha3": "btn",
+        "id": 64,
+        "name": "Bhútán"
     },
     {
         "alpha2": "BO",
         "alpha3": "bol",
         "id": 68,
-        "name": "Bolivia"
+        "name": "Bolívie"
     },
     {
         "alpha2": "BA",
         "alpha3": "bih",
         "id": 70,
-        "name": "Bosnia y Herzegovina"
+        "name": "Bosna a Hercegovina"
     },
     {
         "alpha2": "BW",
         "alpha3": "bwa",
         "id": 72,
-        "name": "Botsuana"
+        "name": "Botswana"
     },
     {
         "alpha2": "BR",
         "alpha3": "bra",
         "id": 76,
-        "name": "Brasil"
+        "name": "Brazílie"
     },
     {
         "alpha2": "BN",
         "alpha3": "brn",
         "id": 96,
-        "name": "Brunéi"
+        "name": "Brunej"
     },
     {
         "alpha2": "BG",
         "alpha3": "bgr",
         "id": 100,
-        "name": "Bulgaria"
+        "name": "Bulharsko"
     },
     {
         "alpha2": "BF",
@@ -174,148 +162,64 @@
         "name": "Burundi"
     },
     {
-        "alpha2": "BT",
-        "alpha3": "btn",
-        "id": 64,
-        "name": "Bután"
-    },
-    {
-        "alpha2": "CV",
-        "alpha3": "cpv",
-        "id": 132,
-        "name": "Cabo Verde"
-    },
-    {
-        "alpha2": "KH",
-        "alpha3": "khm",
-        "id": 116,
-        "name": "Camboya"
-    },
-    {
-        "alpha2": "CM",
-        "alpha3": "cmr",
-        "id": 120,
-        "name": "Camerún"
-    },
-    {
-        "alpha2": "CA",
-        "alpha3": "can",
-        "id": 124,
-        "name": "Canadá"
-    },
-    {
-        "alpha2": "QA",
-        "alpha3": "qat",
-        "id": 634,
-        "name": "Catar"
-    },
-    {
         "alpha2": "TD",
         "alpha3": "tcd",
         "id": 148,
-        "name": "Chad"
+        "name": "Čad"
     },
     {
-        "alpha2": "CL",
-        "alpha3": "chl",
-        "id": 152,
-        "name": "Chile"
+        "alpha2": "ME",
+        "alpha3": "mne",
+        "id": 499,
+        "name": "Černá Hora"
+    },
+    {
+        "alpha2": "CZ",
+        "alpha3": "cze",
+        "id": 203,
+        "name": "Česko"
     },
     {
         "alpha2": "CN",
         "alpha3": "chn",
         "id": 156,
-        "name": "China"
-    },
-    {
-        "alpha2": "CY",
-        "alpha3": "cyp",
-        "id": 196,
-        "name": "Chipre"
-    },
-    {
-        "alpha2": "CO",
-        "alpha3": "col",
-        "id": 170,
-        "name": "Colombia"
-    },
-    {
-        "alpha2": "KM",
-        "alpha3": "com",
-        "id": 174,
-        "name": "Comoras"
-    },
-    {
-        "alpha2": "KP",
-        "alpha3": "prk",
-        "id": 408,
-        "name": "Corea del Norte"
-    },
-    {
-        "alpha2": "KR",
-        "alpha3": "kor",
-        "id": 410,
-        "name": "Corea del Sur"
-    },
-    {
-        "alpha2": "CI",
-        "alpha3": "civ",
-        "id": 384,
-        "name": "Costa de Marfil"
-    },
-    {
-        "alpha2": "CR",
-        "alpha3": "cri",
-        "id": 188,
-        "name": "Costa Rica"
-    },
-    {
-        "alpha2": "HR",
-        "alpha3": "hrv",
-        "id": 191,
-        "name": "Croacia"
-    },
-    {
-        "alpha2": "CU",
-        "alpha3": "cub",
-        "id": 192,
-        "name": "Cuba"
+        "name": "Čína"
     },
     {
         "alpha2": "DK",
         "alpha3": "dnk",
         "id": 208,
-        "name": "Dinamarca"
+        "name": "Dánsko"
     },
     {
         "alpha2": "DM",
         "alpha3": "dma",
         "id": 212,
-        "name": "Dominica"
+        "name": "Dominika"
     },
     {
-        "alpha2": "EC",
-        "alpha3": "ecu",
-        "id": 218,
-        "name": "Ecuador"
+        "alpha2": "DO",
+        "alpha3": "dom",
+        "id": 214,
+        "name": "Dominikánská republika"
+    },
+    {
+        "alpha2": "DJ",
+        "alpha3": "dji",
+        "id": 262,
+        "name": "Džibutsko"
     },
     {
         "alpha2": "EG",
         "alpha3": "egy",
         "id": 818,
-        "name": "Egipto"
+        "name": "Egypt"
     },
     {
-        "alpha2": "SV",
-        "alpha3": "slv",
-        "id": 222,
-        "name": "El Salvador"
-    },
-    {
-        "alpha2": "AE",
-        "alpha3": "are",
-        "id": 784,
-        "name": "Emiratos Árabes Unidos"
+        "alpha2": "EC",
+        "alpha3": "ecu",
+        "id": 218,
+        "name": "Ekvádor"
     },
     {
         "alpha2": "ER",
@@ -324,82 +228,52 @@
         "name": "Eritrea"
     },
     {
-        "alpha2": "SK",
-        "alpha3": "svk",
-        "id": 703,
-        "name": "Eslovaquia"
-    },
-    {
-        "alpha2": "SI",
-        "alpha3": "svn",
-        "id": 705,
-        "name": "Eslovenia"
-    },
-    {
-        "alpha2": "ES",
-        "alpha3": "esp",
-        "id": 724,
-        "name": "España"
-    },
-    {
-        "alpha2": "US",
-        "alpha3": "usa",
-        "id": 840,
-        "name": "Estados Unidos"
-    },
-    {
         "alpha2": "EE",
         "alpha3": "est",
         "id": 233,
-        "name": "Estonia"
+        "name": "Estonsko"
     },
     {
         "alpha2": "ET",
         "alpha3": "eth",
         "id": 231,
-        "name": "Etiopía"
-    },
-    {
-        "alpha2": "PH",
-        "alpha3": "phl",
-        "id": 608,
-        "name": "Filipinas"
-    },
-    {
-        "alpha2": "FI",
-        "alpha3": "fin",
-        "id": 246,
-        "name": "Finlandia"
+        "name": "Etiopie"
     },
     {
         "alpha2": "FJ",
         "alpha3": "fji",
         "id": 242,
-        "name": "Fiyi"
+        "name": "Fidži"
+    },
+    {
+        "alpha2": "PH",
+        "alpha3": "phl",
+        "id": 608,
+        "name": "Filipíny"
+    },
+    {
+        "alpha2": "FI",
+        "alpha3": "fin",
+        "id": 246,
+        "name": "Finsko"
     },
     {
         "alpha2": "FR",
         "alpha3": "fra",
         "id": 250,
-        "name": "Francia"
+        "name": "Francie"
     },
     {
         "alpha2": "GA",
         "alpha3": "gab",
         "id": 266,
-        "name": "Gabón"
+        "name": "Gabon"
     },
     {
         "alpha2": "GM",
         "alpha3": "gmb",
         "id": 270,
-        "name": "Gambia"
-    },
-    {
-        "alpha2": "GE",
-        "alpha3": "geo",
-        "id": 268,
-        "name": "Georgia"
+        "name": "Gambie"
     },
     {
         "alpha2": "GH",
@@ -411,13 +285,13 @@
         "alpha2": "GD",
         "alpha3": "grd",
         "id": 308,
-        "name": "Granada"
+        "name": "Grenada"
     },
     {
-        "alpha2": "GR",
-        "alpha3": "grc",
-        "id": 300,
-        "name": "Grecia"
+        "alpha2": "GE",
+        "alpha3": "geo",
+        "id": 268,
+        "name": "Gruzie"
     },
     {
         "alpha2": "GT",
@@ -435,13 +309,7 @@
         "alpha2": "GW",
         "alpha3": "gnb",
         "id": 624,
-        "name": "Guinea-Bisáu"
-    },
-    {
-        "alpha2": "GQ",
-        "alpha3": "gnq",
-        "id": 226,
-        "name": "Guinea Ecuatorial"
+        "name": "Guinea-Bissau"
     },
     {
         "alpha2": "GY",
@@ -453,7 +321,7 @@
         "alpha2": "HT",
         "alpha3": "hti",
         "id": 332,
-        "name": "Haití"
+        "name": "Haiti"
     },
     {
         "alpha2": "HN",
@@ -462,106 +330,148 @@
         "name": "Honduras"
     },
     {
-        "alpha2": "HU",
-        "alpha3": "hun",
-        "id": 348,
-        "name": "Hungría"
+        "alpha2": "CL",
+        "alpha3": "chl",
+        "id": 152,
+        "name": "Chile"
+    },
+    {
+        "alpha2": "HR",
+        "alpha3": "hrv",
+        "id": 191,
+        "name": "Chorvatsko"
     },
     {
         "alpha2": "IN",
         "alpha3": "ind",
         "id": 356,
-        "name": "India"
+        "name": "Indie"
     },
     {
         "alpha2": "ID",
         "alpha3": "idn",
         "id": 360,
-        "name": "Indonesia"
+        "name": "Indonésie"
     },
     {
         "alpha2": "IQ",
         "alpha3": "irq",
         "id": 368,
-        "name": "Irak"
+        "name": "Irák"
     },
     {
         "alpha2": "IR",
         "alpha3": "irn",
         "id": 364,
-        "name": "Irán"
+        "name": "Írán"
     },
     {
         "alpha2": "IE",
         "alpha3": "irl",
         "id": 372,
-        "name": "Irlanda"
+        "name": "Irsko"
     },
     {
         "alpha2": "IS",
         "alpha3": "isl",
         "id": 352,
-        "name": "Islandia"
-    },
-    {
-        "alpha2": "MH",
-        "alpha3": "mhl",
-        "id": 584,
-        "name": "Islas Marshall"
-    },
-    {
-        "alpha2": "SB",
-        "alpha3": "slb",
-        "id": 90,
-        "name": "Islas Salomón"
-    },
-    {
-        "alpha2": "IL",
-        "alpha3": "isr",
-        "id": 376,
-        "name": "Israel"
+        "name": "Island"
     },
     {
         "alpha2": "IT",
         "alpha3": "ita",
         "id": 380,
-        "name": "Italia"
+        "name": "Itálie"
+    },
+    {
+        "alpha2": "IL",
+        "alpha3": "isr",
+        "id": 376,
+        "name": "Izrael"
     },
     {
         "alpha2": "JM",
         "alpha3": "jam",
         "id": 388,
-        "name": "Jamaica"
+        "name": "Jamajka"
     },
     {
         "alpha2": "JP",
         "alpha3": "jpn",
         "id": 392,
-        "name": "Japón"
+        "name": "Japonsko"
+    },
+    {
+        "alpha2": "YE",
+        "alpha3": "yem",
+        "id": 887,
+        "name": "Jemen"
+    },
+    {
+        "alpha2": "ZA",
+        "alpha3": "zaf",
+        "id": 710,
+        "name": "Jihoafrická republika"
+    },
+    {
+        "alpha2": "KR",
+        "alpha3": "kor",
+        "id": 410,
+        "name": "Jižní Korea"
+    },
+    {
+        "alpha2": "SS",
+        "alpha3": "ssd",
+        "id": 728,
+        "name": "Jižní Súdán"
     },
     {
         "alpha2": "JO",
         "alpha3": "jor",
         "id": 400,
-        "name": "Jordania"
+        "name": "Jordánsko"
+    },
+    {
+        "alpha2": "KH",
+        "alpha3": "khm",
+        "id": 116,
+        "name": "Kambodža"
+    },
+    {
+        "alpha2": "CM",
+        "alpha3": "cmr",
+        "id": 120,
+        "name": "Kamerun"
+    },
+    {
+        "alpha2": "CA",
+        "alpha3": "can",
+        "id": 124,
+        "name": "Kanada"
+    },
+    {
+        "alpha2": "CV",
+        "alpha3": "cpv",
+        "id": 132,
+        "name": "Kapverdy"
+    },
+    {
+        "alpha2": "QA",
+        "alpha3": "qat",
+        "id": 634,
+        "name": "Katar"
     },
     {
         "alpha2": "KZ",
         "alpha3": "kaz",
         "id": 398,
-        "name": "Kazajistán"
+        "name": "Kazachstán"
     },
     {
         "alpha2": "KE",
         "alpha3": "ken",
         "id": 404,
-        "name": "Kenia"
-    },
-    {
-        "alpha2": "KG",
-        "alpha3": "kgz",
-        "id": 417,
-        "name": "Kirguistán"
+        "name": "Keňa"
     },
     {
         "alpha2": "KI",
@@ -570,10 +480,58 @@
         "name": "Kiribati"
     },
     {
+        "alpha2": "CO",
+        "alpha3": "col",
+        "id": 170,
+        "name": "Kolumbie"
+    },
+    {
+        "alpha2": "KM",
+        "alpha3": "com",
+        "id": 174,
+        "name": "Komory"
+    },
+    {
+        "alpha2": "CG",
+        "alpha3": "cog",
+        "id": 178,
+        "name": "Kongo"
+    },
+    {
+        "alpha2": "CD",
+        "alpha3": "cod",
+        "id": 180,
+        "name": "Konžská demokratická republika"
+    },
+    {
+        "alpha2": "CR",
+        "alpha3": "cri",
+        "id": 188,
+        "name": "Kostarika"
+    },
+    {
+        "alpha2": "CU",
+        "alpha3": "cub",
+        "id": 192,
+        "name": "Kuba"
+    },
+    {
         "alpha2": "KW",
         "alpha3": "kwt",
         "id": 414,
-        "name": "Kuwait"
+        "name": "Kuvajt"
+    },
+    {
+        "alpha2": "CY",
+        "alpha3": "cyp",
+        "id": 196,
+        "name": "Kypr"
+    },
+    {
+        "alpha2": "KG",
+        "alpha3": "kgz",
+        "id": 417,
+        "name": "Kyrgyzstán"
     },
     {
         "alpha2": "LA",
@@ -585,85 +543,85 @@
         "alpha2": "LS",
         "alpha3": "lso",
         "id": 426,
-        "name": "Lesoto"
-    },
-    {
-        "alpha2": "LV",
-        "alpha3": "lva",
-        "id": 428,
-        "name": "Letonia"
+        "name": "Lesotho"
     },
     {
         "alpha2": "LB",
         "alpha3": "lbn",
         "id": 422,
-        "name": "Líbano"
+        "name": "Libanon"
     },
     {
         "alpha2": "LR",
         "alpha3": "lbr",
         "id": 430,
-        "name": "Liberia"
+        "name": "Libérie"
     },
     {
         "alpha2": "LY",
         "alpha3": "lby",
         "id": 434,
-        "name": "Libia"
+        "name": "Libye"
     },
     {
         "alpha2": "LI",
         "alpha3": "lie",
         "id": 438,
-        "name": "Liechtenstein"
+        "name": "Lichtenštejnsko"
     },
     {
         "alpha2": "LT",
         "alpha3": "ltu",
         "id": 440,
-        "name": "Lituania"
+        "name": "Litva"
+    },
+    {
+        "alpha2": "LV",
+        "alpha3": "lva",
+        "id": 428,
+        "name": "Lotyšsko"
     },
     {
         "alpha2": "LU",
         "alpha3": "lux",
         "id": 442,
-        "name": "Luxemburgo"
-    },
-    {
-        "alpha2": "MK",
-        "alpha3": "mkd",
-        "id": 807,
-        "name": "Macedonia del Norte"
+        "name": "Lucembursko"
     },
     {
         "alpha2": "MG",
         "alpha3": "mdg",
         "id": 450,
-        "name": "Madagascar"
+        "name": "Madagaskar"
+    },
+    {
+        "alpha2": "HU",
+        "alpha3": "hun",
+        "id": 348,
+        "name": "Maďarsko"
     },
     {
         "alpha2": "MY",
         "alpha3": "mys",
         "id": 458,
-        "name": "Malasia"
+        "name": "Malajsie"
     },
     {
         "alpha2": "MW",
         "alpha3": "mwi",
         "id": 454,
-        "name": "Malaui"
+        "name": "Malawi"
     },
     {
         "alpha2": "MV",
         "alpha3": "mdv",
         "id": 462,
-        "name": "Maldivas"
+        "name": "Maledivy"
     },
     {
         "alpha2": "ML",
         "alpha3": "mli",
         "id": 466,
-        "name": "Malí"
+        "name": "Mali"
     },
     {
         "alpha2": "MT",
@@ -675,73 +633,73 @@
         "alpha2": "MA",
         "alpha3": "mar",
         "id": 504,
-        "name": "Marruecos"
+        "name": "Maroko"
+    },
+    {
+        "alpha2": "MH",
+        "alpha3": "mhl",
+        "id": 584,
+        "name": "Marshallovy ostrovy"
     },
     {
         "alpha2": "MU",
         "alpha3": "mus",
         "id": 480,
-        "name": "Mauricio"
+        "name": "Mauricius"
     },
     {
         "alpha2": "MR",
         "alpha3": "mrt",
         "id": 478,
-        "name": "Mauritania"
+        "name": "Mauritánie"
     },
     {
         "alpha2": "MX",
         "alpha3": "mex",
         "id": 484,
-        "name": "México"
+        "name": "Mexiko"
     },
     {
         "alpha2": "FM",
         "alpha3": "fsm",
         "id": 583,
-        "name": "Micronesia"
+        "name": "Mikronésie"
     },
     {
         "alpha2": "MD",
         "alpha3": "mda",
         "id": 498,
-        "name": "Moldavia"
+        "name": "Moldavsko"
     },
     {
         "alpha2": "MC",
         "alpha3": "mco",
         "id": 492,
-        "name": "Mónaco"
+        "name": "Monako"
     },
     {
         "alpha2": "MN",
         "alpha3": "mng",
         "id": 496,
-        "name": "Mongolia"
-    },
-    {
-        "alpha2": "ME",
-        "alpha3": "mne",
-        "id": 499,
-        "name": "Montenegro"
+        "name": "Mongolsko"
     },
     {
         "alpha2": "MZ",
         "alpha3": "moz",
         "id": 508,
-        "name": "Mozambique"
+        "name": "Mosambik"
     },
     {
         "alpha2": "MM",
         "alpha3": "mmr",
         "id": 104,
-        "name": "Birmania"
+        "name": "Myanmar"
     },
     {
         "alpha2": "NA",
         "alpha3": "nam",
         "id": 516,
-        "name": "Namibia"
+        "name": "Namibie"
     },
     {
         "alpha2": "NR",
@@ -750,40 +708,52 @@
         "name": "Nauru"
     },
     {
+        "alpha2": "DE",
+        "alpha3": "deu",
+        "id": 276,
+        "name": "Německo"
+    },
+    {
         "alpha2": "NP",
         "alpha3": "npl",
         "id": 524,
-        "name": "Nepal"
-    },
-    {
-        "alpha2": "NI",
-        "alpha3": "nic",
-        "id": 558,
-        "name": "Nicaragua"
+        "name": "Nepál"
     },
     {
         "alpha2": "NE",
         "alpha3": "ner",
         "id": 562,
-        "name": "Níger"
+        "name": "Niger"
     },
     {
         "alpha2": "NG",
         "alpha3": "nga",
         "id": 566,
-        "name": "Nigeria"
+        "name": "Nigérie"
+    },
+    {
+        "alpha2": "NI",
+        "alpha3": "nic",
+        "id": 558,
+        "name": "Nikaragua"
+    },
+    {
+        "alpha2": "NL",
+        "alpha3": "nld",
+        "id": 528,
+        "name": "Nizozemsko"
     },
     {
         "alpha2": "NO",
         "alpha3": "nor",
         "id": 578,
-        "name": "Noruega"
+        "name": "Norsko"
     },
     {
         "alpha2": "NZ",
         "alpha3": "nzl",
         "id": 554,
-        "name": "Nueva Zelanda"
+        "name": "Nový Zéland"
     },
     {
         "alpha2": "OM",
@@ -792,34 +762,28 @@
         "name": "Omán"
     },
     {
-        "alpha2": "NL",
-        "alpha3": "nld",
-        "id": 528,
-        "name": "Países Bajos"
-    },
-    {
         "alpha2": "PK",
         "alpha3": "pak",
         "id": 586,
-        "name": "Pakistán"
+        "name": "Pákistán"
     },
     {
         "alpha2": "PW",
         "alpha3": "plw",
         "id": 585,
-        "name": "Palaos"
+        "name": "Palau"
     },
     {
         "alpha2": "PA",
         "alpha3": "pan",
         "id": 591,
-        "name": "Panamá"
+        "name": "Panama"
     },
     {
         "alpha2": "PG",
         "alpha3": "png",
         "id": 598,
-        "name": "Papúa Nueva Guinea"
+        "name": "Papua Nová Guinea"
     },
     {
         "alpha2": "PY",
@@ -831,73 +795,67 @@
         "alpha2": "PE",
         "alpha3": "per",
         "id": 604,
-        "name": "Perú"
+        "name": "Peru"
+    },
+    {
+        "alpha2": "CI",
+        "alpha3": "civ",
+        "id": 384,
+        "name": "Pobřeží slonoviny"
     },
     {
         "alpha2": "PL",
         "alpha3": "pol",
         "id": 616,
-        "name": "Polonia"
+        "name": "Polsko"
     },
     {
         "alpha2": "PT",
         "alpha3": "prt",
         "id": 620,
-        "name": "Portugal"
+        "name": "Portugalsko"
     },
     {
-        "alpha2": "GB",
-        "alpha3": "gbr",
-        "id": 826,
-        "name": "Reino Unido"
+        "alpha2": "AT",
+        "alpha3": "aut",
+        "id": 40,
+        "name": "Rakousko"
     },
     {
-        "alpha2": "CF",
-        "alpha3": "caf",
-        "id": 140,
-        "name": "República Centroafricana"
-    },
-    {
-        "alpha2": "CZ",
-        "alpha3": "cze",
-        "id": 203,
-        "name": "República Checa"
-    },
-    {
-        "alpha2": "CG",
-        "alpha3": "cog",
-        "id": 178,
-        "name": "República del Congo"
-    },
-    {
-        "alpha2": "CD",
-        "alpha3": "cod",
-        "id": 180,
-        "name": "República Democrática del Congo"
-    },
-    {
-        "alpha2": "DO",
-        "alpha3": "dom",
-        "id": 214,
-        "name": "República Dominicana"
-    },
-    {
-        "alpha2": "RW",
-        "alpha3": "rwa",
-        "id": 646,
-        "name": "Ruanda"
+        "alpha2": "GQ",
+        "alpha3": "gnq",
+        "id": 226,
+        "name": "Rovníková Guinea"
     },
     {
         "alpha2": "RO",
         "alpha3": "rou",
         "id": 642,
-        "name": "Rumania"
+        "name": "Rumunsko"
     },
     {
         "alpha2": "RU",
         "alpha3": "rus",
         "id": 643,
-        "name": "Rusia"
+        "name": "Rusko"
+    },
+    {
+        "alpha2": "RW",
+        "alpha3": "rwa",
+        "id": 646,
+        "name": "Rwanda"
+    },
+    {
+        "alpha2": "GR",
+        "alpha3": "grc",
+        "id": 300,
+        "name": "Řecko"
+    },
+    {
+        "alpha2": "SV",
+        "alpha3": "slv",
+        "id": 222,
+        "name": "Salvador"
     },
     {
         "alpha2": "WS",
@@ -906,34 +864,16 @@
         "name": "Samoa"
     },
     {
-        "alpha2": "KN",
-        "alpha3": "kna",
-        "id": 659,
-        "name": "San Cristóbal y Nieves"
-    },
-    {
         "alpha2": "SM",
         "alpha3": "smr",
         "id": 674,
         "name": "San Marino"
     },
     {
-        "alpha2": "VC",
-        "alpha3": "vct",
-        "id": 670,
-        "name": "San Vicente y las Granadinas"
-    },
-    {
-        "alpha2": "LC",
-        "alpha3": "lca",
-        "id": 662,
-        "name": "Santa Lucía"
-    },
-    {
-        "alpha2": "ST",
-        "alpha3": "stp",
-        "id": 678,
-        "name": "Santo Tomé y Príncipe"
+        "alpha2": "SA",
+        "alpha3": "sau",
+        "id": 682,
+        "name": "Saúdská Arábie"
     },
     {
         "alpha2": "SN",
@@ -942,22 +882,28 @@
         "name": "Senegal"
     },
     {
-        "alpha2": "RS",
-        "alpha3": "srb",
-        "id": 688,
-        "name": "Serbia"
+        "alpha2": "KP",
+        "alpha3": "prk",
+        "id": 408,
+        "name": "Severní Korea"
+    },
+    {
+        "alpha2": "MK",
+        "alpha3": "mkd",
+        "id": 807,
+        "name": "Severní Makedonie"
     },
     {
         "alpha2": "SC",
         "alpha3": "syc",
         "id": 690,
-        "name": "Seychelles"
+        "name": "Seychely"
     },
     {
         "alpha2": "SL",
         "alpha3": "sle",
         "id": 694,
-        "name": "Sierra Leona"
+        "name": "Sierra Leone"
     },
     {
         "alpha2": "SG",
@@ -966,58 +912,64 @@
         "name": "Singapur"
     },
     {
-        "alpha2": "SY",
-        "alpha3": "syr",
-        "id": 760,
-        "name": "Siria"
+        "alpha2": "SK",
+        "alpha3": "svk",
+        "id": 703,
+        "name": "Slovensko"
+    },
+    {
+        "alpha2": "SI",
+        "alpha3": "svn",
+        "id": 705,
+        "name": "Slovinsko"
     },
     {
         "alpha2": "SO",
         "alpha3": "som",
         "id": 706,
-        "name": "Somalia"
+        "name": "Somálsko"
+    },
+    {
+        "alpha2": "AE",
+        "alpha3": "are",
+        "id": 784,
+        "name": "Spojené arabské emiráty"
+    },
+    {
+        "alpha2": "GB",
+        "alpha3": "gbr",
+        "id": 826,
+        "name": "Spojené království Velké Británie a Severního Irska"
+    },
+    {
+        "alpha2": "US",
+        "alpha3": "usa",
+        "id": 840,
+        "name": "Spojené státy americké"
+    },
+    {
+        "alpha2": "RS",
+        "alpha3": "srb",
+        "id": 688,
+        "name": "Srbsko"
     },
     {
         "alpha2": "LK",
         "alpha3": "lka",
         "id": 144,
-        "name": "Sri Lanka"
+        "name": "Srí Lanka"
     },
     {
-        "alpha2": "SZ",
-        "alpha3": "swz",
-        "id": 748,
-        "name": "Suazilandia"
-    },
-    {
-        "alpha2": "ZA",
-        "alpha3": "zaf",
-        "id": 710,
-        "name": "Sudáfrica"
+        "alpha2": "CF",
+        "alpha3": "caf",
+        "id": 140,
+        "name": "Středoafrická republika"
     },
     {
         "alpha2": "SD",
         "alpha3": "sdn",
         "id": 729,
-        "name": "Sudán"
-    },
-    {
-        "alpha2": "SS",
-        "alpha3": "ssd",
-        "id": 728,
-        "name": "Sudán del Sur"
-    },
-    {
-        "alpha2": "SE",
-        "alpha3": "swe",
-        "id": 752,
-        "name": "Suecia"
-    },
-    {
-        "alpha2": "CH",
-        "alpha3": "che",
-        "id": 756,
-        "name": "Suiza"
+        "name": "Súdán"
     },
     {
         "alpha2": "SR",
@@ -1026,28 +978,82 @@
         "name": "Surinam"
     },
     {
-        "alpha2": "TH",
-        "alpha3": "tha",
-        "id": 764,
-        "name": "Tailandia"
+        "alpha2": "LC",
+        "alpha3": "lca",
+        "id": 662,
+        "name": "Svatá Lucie"
     },
     {
-        "alpha2": "TZ",
-        "alpha3": "tza",
-        "id": 834,
-        "name": "Tanzania"
+        "alpha2": "KN",
+        "alpha3": "kna",
+        "id": 659,
+        "name": "Svatý Kryštof a Nevis"
+    },
+    {
+        "alpha2": "ST",
+        "alpha3": "stp",
+        "id": 678,
+        "name": "Svatý Tomáš a Princův ostrov"
+    },
+    {
+        "alpha2": "VC",
+        "alpha3": "vct",
+        "id": 670,
+        "name": "Svatý Vincenc a Grenadiny"
+    },
+    {
+        "alpha2": "SZ",
+        "alpha3": "swz",
+        "id": 748,
+        "name": "Svazijsko"
+    },
+    {
+        "alpha2": "SY",
+        "alpha3": "syr",
+        "id": 760,
+        "name": "Sýrie"
+    },
+    {
+        "alpha2": "SB",
+        "alpha3": "slb",
+        "id": 90,
+        "name": "Šalomounovy ostrovy"
+    },
+    {
+        "alpha2": "ES",
+        "alpha3": "esp",
+        "id": 724,
+        "name": "Španělsko"
+    },
+    {
+        "alpha2": "SE",
+        "alpha3": "swe",
+        "id": 752,
+        "name": "Švédsko"
+    },
+    {
+        "alpha2": "CH",
+        "alpha3": "che",
+        "id": 756,
+        "name": "Švýcarsko"
     },
     {
         "alpha2": "TJ",
         "alpha3": "tjk",
         "id": 762,
-        "name": "Tayikistán"
+        "name": "Tádžikistán"
     },
     {
-        "alpha2": "TL",
-        "alpha3": "tls",
-        "id": 626,
-        "name": "Timor Oriental"
+        "alpha2": "TZ",
+        "alpha3": "tza",
+        "id": 834,
+        "name": "Tanzanie"
+    },
+    {
+        "alpha2": "TH",
+        "alpha3": "tha",
+        "id": 764,
+        "name": "Thajsko"
     },
     {
         "alpha2": "TG",
@@ -1065,13 +1071,19 @@
         "alpha2": "TT",
         "alpha3": "tto",
         "id": 780,
-        "name": "Trinidad y Tobago"
+        "name": "Trinidad a Tobago"
     },
     {
         "alpha2": "TN",
         "alpha3": "tun",
         "id": 788,
-        "name": "Túnez"
+        "name": "Tunisko"
+    },
+    {
+        "alpha2": "TR",
+        "alpha3": "tur",
+        "id": 792,
+        "name": "Turecko"
     },
     {
         "alpha2": "TM",
@@ -1080,28 +1092,22 @@
         "name": "Turkmenistán"
     },
     {
-        "alpha2": "TR",
-        "alpha3": "tur",
-        "id": 792,
-        "name": "Turquía"
-    },
-    {
         "alpha2": "TV",
         "alpha3": "tuv",
         "id": 798,
         "name": "Tuvalu"
     },
     {
-        "alpha2": "UA",
-        "alpha3": "ukr",
-        "id": 804,
-        "name": "Ucrania"
-    },
-    {
         "alpha2": "UG",
         "alpha3": "uga",
         "id": 800,
         "name": "Uganda"
+    },
+    {
+        "alpha2": "UA",
+        "alpha3": "ukr",
+        "id": 804,
+        "name": "Ukrajina"
     },
     {
         "alpha2": "UY",
@@ -1134,27 +1140,21 @@
         "name": "Vietnam"
     },
     {
-        "alpha2": "YE",
-        "alpha3": "yem",
-        "id": 887,
-        "name": "Yemen"
-    },
-    {
-        "alpha2": "DJ",
-        "alpha3": "dji",
-        "id": 262,
-        "name": "Yibuti"
+        "alpha2": "TL",
+        "alpha3": "tls",
+        "id": 626,
+        "name": "Východní Timor"
     },
     {
         "alpha2": "ZM",
         "alpha3": "zmb",
         "id": 894,
-        "name": "Zambia"
+        "name": "Zambie"
     },
     {
         "alpha2": "ZW",
         "alpha3": "zwe",
         "id": 716,
-        "name": "Zimbabue"
+        "name": "Zimbabwe"
     }
 ]

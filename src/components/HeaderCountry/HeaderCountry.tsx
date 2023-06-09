@@ -13,7 +13,7 @@ export const HeaderCountry = ({selectedCountry}: Props) => {
       <CountryFlag imgSrc={countryFlags[selectedCountry?.alpha2 || '']} />
       <Text style={styles.coutryName}>{selectedCountry?.name}</Text>
       <View style={styles.selectedTextContainer}>
-        <Text style={styles.selectedText}>selected</Text>
+        <Text style={styles.selectedText}>Selected</Text>
       </View>
     </View>
   );
@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
     marginLeft: 5,
   },
   selectedText: {
-    fontSize: 16,
+    fontSize: 12,
     fontWeight: '600',
     color: 'black',
   },

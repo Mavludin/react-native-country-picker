@@ -1,8 +1,8 @@
 import React, {useRef, useState} from 'react';
 
-import BottomSheet, {BottomSheetTextInput} from '@gorhom/bottom-sheet';
+import BottomSheet from '@gorhom/bottom-sheet';
 
-import {StyleSheet, View, useWindowDimensions, Text} from 'react-native';
+import {View, useWindowDimensions, Text} from 'react-native';
 import {
   CountryItem,
   countriesByLanguage,
@@ -49,22 +49,8 @@ export const CountryBottomSheet = () => {
         ref={sheetRef}
         snapPoints={SNAP_POINTS}
         keyboardBehavior="fillParent">
-        <BottomSheetTextInput style={styles.input} placeholder="Search" />
         <CountryList countries={data} />
       </BottomSheet>
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  input: {
-    marginBottom: 10,
-    paddingHorizontal: 20,
-    fontSize: 20,
-    lineHeight: 20,
-    padding: 8,
-    color: '#9A9A9A',
-    borderBottomColor: '#CBCBCB',
-    borderBottomWidth: 1,
-  },
-});

@@ -3,13 +3,13 @@
         "alpha2": "AU",
         "alpha3": "aus",
         "id": 36,
-        "name": "Австралия"
+        "name": "Австралія"
     },
     {
         "alpha2": "AT",
         "alpha3": "aut",
         "id": 40,
-        "name": "Австрия"
+        "name": "Австрія"
     },
     {
         "alpha2": "AZ",
@@ -21,7 +21,7 @@
         "alpha2": "AL",
         "alpha3": "alb",
         "id": 8,
-        "name": "Албания"
+        "name": "Албанія"
     },
     {
         "alpha2": "DZ",
@@ -45,7 +45,7 @@
         "alpha2": "AG",
         "alpha3": "atg",
         "id": 28,
-        "name": "Антигуа и Барбуда"
+        "name": "Антигуа і Барбуда"
     },
     {
         "alpha2": "AR",
@@ -54,22 +54,16 @@
         "name": "Аргентина"
     },
     {
-        "alpha2": "AM",
-        "alpha3": "arm",
-        "id": 51,
-        "name": "Армения"
-    },
-    {
         "alpha2": "AF",
         "alpha3": "afg",
         "id": 4,
-        "name": "Афганистан"
+        "name": "Афганістан"
     },
     {
         "alpha2": "BS",
         "alpha3": "bhs",
         "id": 44,
-        "name": "Багамские Острова"
+        "name": "Багамські Острови"
     },
     {
         "alpha2": "BD",
@@ -93,43 +87,43 @@
         "alpha2": "BZ",
         "alpha3": "blz",
         "id": 84,
-        "name": "Белиз"
-    },
-    {
-        "alpha2": "BY",
-        "alpha3": "blr",
-        "id": 112,
-        "name": "Беларусь"
+        "name": "Беліз"
     },
     {
         "alpha2": "BE",
         "alpha3": "bel",
         "id": 56,
-        "name": "Бельгия"
+        "name": "Бельгія"
     },
     {
         "alpha2": "BJ",
         "alpha3": "ben",
         "id": 204,
-        "name": "Бенин"
+        "name": "Бенін"
+    },
+    {
+        "alpha2": "BY",
+        "alpha3": "blr",
+        "id": 112,
+        "name": "Білорусь"
     },
     {
         "alpha2": "BG",
         "alpha3": "bgr",
         "id": 100,
-        "name": "Болгария"
+        "name": "Болгарія"
     },
     {
         "alpha2": "BO",
         "alpha3": "bol",
         "id": 68,
-        "name": "Боливия"
+        "name": "Болівія"
     },
     {
         "alpha2": "BA",
         "alpha3": "bih",
         "id": 70,
-        "name": "Босния и Герцеговина"
+        "name": "Боснія і Герцеговина"
     },
     {
         "alpha2": "BW",
@@ -141,7 +135,7 @@
         "alpha2": "BR",
         "alpha3": "bra",
         "id": 76,
-        "name": "Бразилия"
+        "name": "Бразилія"
     },
     {
         "alpha2": "BN",
@@ -153,13 +147,13 @@
         "alpha2": "BF",
         "alpha3": "bfa",
         "id": 854,
-        "name": "Буркина-Фасо"
+        "name": "Буркіна-Фасо"
     },
     {
         "alpha2": "BI",
         "alpha3": "bdi",
         "id": 108,
-        "name": "Бурунди"
+        "name": "Бурунді"
     },
     {
         "alpha2": "BT",
@@ -177,31 +171,25 @@
         "alpha2": "GB",
         "alpha3": "gbr",
         "id": 826,
-        "name": "Великобритания"
-    },
-    {
-        "alpha2": "HU",
-        "alpha3": "hun",
-        "id": 348,
-        "name": "Венгрия"
+        "name": "Велика Британія"
     },
     {
         "alpha2": "VE",
         "alpha3": "ven",
         "id": 862,
-        "name": "Венесуэла"
-    },
-    {
-        "alpha2": "TL",
-        "alpha3": "tls",
-        "id": 626,
-        "name": "Восточный Тимор"
+        "name": "Венесуела"
     },
     {
         "alpha2": "VN",
         "alpha3": "vnm",
         "id": 704,
-        "name": "Вьетнам"
+        "name": "В'єтнам"
+    },
+    {
+        "alpha2": "AM",
+        "alpha3": "arm",
+        "id": 51,
+        "name": "Вірменія"
     },
     {
         "alpha2": "GA",
@@ -213,19 +201,19 @@
         "alpha2": "HT",
         "alpha3": "hti",
         "id": 332,
-        "name": "Гаити"
+        "name": "Гаїті"
     },
     {
         "alpha2": "GY",
         "alpha3": "guy",
         "id": 328,
-        "name": "Гайана"
+        "name": "Гаяна"
     },
     {
         "alpha2": "GM",
         "alpha3": "gmb",
         "id": 270,
-        "name": "Гамбия"
+        "name": "Гамбія"
     },
     {
         "alpha2": "GH",
@@ -243,19 +231,13 @@
         "alpha2": "GN",
         "alpha3": "gin",
         "id": 324,
-        "name": "Гвинея"
+        "name": "Гвінея"
     },
     {
         "alpha2": "GW",
         "alpha3": "gnb",
         "id": 624,
-        "name": "Гвинея-Бисау"
-    },
-    {
-        "alpha2": "DE",
-        "alpha3": "deu",
-        "id": 276,
-        "name": "Германия"
+        "name": "Гвінея-Бісау"
     },
     {
         "alpha2": "HN",
@@ -273,37 +255,19 @@
         "alpha2": "GR",
         "alpha3": "grc",
         "id": 300,
-        "name": "Греция"
+        "name": "Греція"
     },
     {
         "alpha2": "GE",
         "alpha3": "geo",
         "id": 268,
-        "name": "Грузия"
+        "name": "Грузія"
     },
     {
         "alpha2": "DK",
         "alpha3": "dnk",
         "id": 208,
-        "name": "Дания"
-    },
-    {
-        "alpha2": "DJ",
-        "alpha3": "dji",
-        "id": 262,
-        "name": "Джибути"
-    },
-    {
-        "alpha2": "DM",
-        "alpha3": "dma",
-        "id": 212,
-        "name": "Доминика"
-    },
-    {
-        "alpha2": "DO",
-        "alpha3": "dom",
-        "id": 214,
-        "name": "Доминиканская Республика"
+        "name": "Данія"
     },
     {
         "alpha2": "CD",
@@ -312,88 +276,136 @@
         "name": "ДР Конго"
     },
     {
+        "alpha2": "DJ",
+        "alpha3": "dji",
+        "id": 262,
+        "name": "Джибуті"
+    },
+    {
+        "alpha2": "DM",
+        "alpha3": "dma",
+        "id": 212,
+        "name": "Домініка"
+    },
+    {
+        "alpha2": "DO",
+        "alpha3": "dom",
+        "id": 214,
+        "name": "Домініканська Республіка"
+    },
+    {
+        "alpha2": "EC",
+        "alpha3": "ecu",
+        "id": 218,
+        "name": "Еквадор"
+    },
+    {
+        "alpha2": "GQ",
+        "alpha3": "gnq",
+        "id": 226,
+        "name": "Екваторіальна Гвінея"
+    },
+    {
+        "alpha2": "ER",
+        "alpha3": "eri",
+        "id": 232,
+        "name": "Еритрея"
+    },
+    {
+        "alpha2": "EE",
+        "alpha3": "est",
+        "id": 233,
+        "name": "Естонія"
+    },
+    {
+        "alpha2": "ET",
+        "alpha3": "eth",
+        "id": 231,
+        "name": "Ефіопія"
+    },
+    {
         "alpha2": "EG",
         "alpha3": "egy",
         "id": 818,
-        "name": "Египет"
-    },
-    {
-        "alpha2": "ZM",
-        "alpha3": "zmb",
-        "id": 894,
-        "name": "Замбия"
-    },
-    {
-        "alpha2": "ZW",
-        "alpha3": "zwe",
-        "id": 716,
-        "name": "Зимбабве"
-    },
-    {
-        "alpha2": "IL",
-        "alpha3": "isr",
-        "id": 376,
-        "name": "Израиль"
-    },
-    {
-        "alpha2": "IN",
-        "alpha3": "ind",
-        "id": 356,
-        "name": "Индия"
-    },
-    {
-        "alpha2": "ID",
-        "alpha3": "idn",
-        "id": 360,
-        "name": "Индонезия"
-    },
-    {
-        "alpha2": "JO",
-        "alpha3": "jor",
-        "id": 400,
-        "name": "Иордания"
-    },
-    {
-        "alpha2": "IQ",
-        "alpha3": "irq",
-        "id": 368,
-        "name": "Ирак"
-    },
-    {
-        "alpha2": "IR",
-        "alpha3": "irn",
-        "id": 364,
-        "name": "Иран"
-    },
-    {
-        "alpha2": "IE",
-        "alpha3": "irl",
-        "id": 372,
-        "name": "Ирландия"
-    },
-    {
-        "alpha2": "IS",
-        "alpha3": "isl",
-        "id": 352,
-        "name": "Исландия"
-    },
-    {
-        "alpha2": "ES",
-        "alpha3": "esp",
-        "id": 724,
-        "name": "Испания"
-    },
-    {
-        "alpha2": "IT",
-        "alpha3": "ita",
-        "id": 380,
-        "name": "Италия"
+        "name": "Єгипет"
     },
     {
         "alpha2": "YE",
         "alpha3": "yem",
         "id": 887,
-        "name": "Йемен"
+        "name": "Ємен"
+    },
+    {
+        "alpha2": "ZM",
+        "alpha3": "zmb",
+        "id": 894,
+        "name": "Замбія"
+    },
+    {
+        "alpha2": "ZW",
+        "alpha3": "zwe",
+        "id": 716,
+        "name": "Зімбабве"
+    },
+    {
+        "alpha2": "IL",
+        "alpha3": "isr",
+        "id": 376,
+        "name": "Ізраїль"
+    },
+    {
+        "alpha2": "IN",
+        "alpha3": "ind",
+        "id": 356,
+        "name": "Індія"
+    },
+    {
+        "alpha2": "ID",
+        "alpha3": "idn",
+        "id": 360,
+        "name": "Індонезія"
+    },
+    {
+        "alpha2": "IQ",
+        "alpha3": "irq",
+        "id": 368,
+        "name": "Ірак"
+    },
+    {
+        "alpha2": "IR",
+        "alpha3": "irn",
+        "id": 364,
+        "name": "Іран"
+    },
+    {
+        "alpha2": "IE",
+        "alpha3": "irl",
+        "id": 372,
+        "name": "Ірландія"
+    },
+    {
+        "alpha2": "IS",
+        "alpha3": "isl",
+        "id": 352,
+        "name": "Ісландія"
+    },
+    {
+        "alpha2": "ES",
+        "alpha3": "esp",
+        "id": 724,
+        "name": "Іспанія"
+    },
+    {
+        "alpha2": "IT",
+        "alpha3": "ita",
+        "id": 380,
+        "name": "Італія"
+    },
+    {
+        "alpha2": "JO",
+        "alpha3": "jor",
+        "id": 400,
+        "name": "Йорданія"
     },
     {
         "alpha2": "CV",
@@ -435,49 +447,49 @@
         "alpha2": "KE",
         "alpha3": "ken",
         "id": 404,
-        "name": "Кения"
-    },
-    {
-        "alpha2": "CY",
-        "alpha3": "cyp",
-        "id": 196,
-        "name": "Кипр"
+        "name": "Кенія"
     },
     {
         "alpha2": "KG",
         "alpha3": "kgz",
         "id": 417,
-        "name": "Киргизия"
-    },
-    {
-        "alpha2": "KI",
-        "alpha3": "kir",
-        "id": 296,
-        "name": "Кирибати"
-    },
-    {
-        "alpha2": "KP",
-        "alpha3": "prk",
-        "id": 408,
-        "name": "КНДР (Корейская Народно-Демократическая Республика)"
+        "name": "Киргизстан"
     },
     {
         "alpha2": "CN",
         "alpha3": "chn",
         "id": 156,
-        "name": "Китай (Китайская Народная Республика)"
+        "name": "Китайська Народна Республіка"
+    },
+    {
+        "alpha2": "CY",
+        "alpha3": "cyp",
+        "id": 196,
+        "name": "Кіпр"
+    },
+    {
+        "alpha2": "KI",
+        "alpha3": "kir",
+        "id": 296,
+        "name": "Кірибаті"
     },
     {
         "alpha2": "CO",
         "alpha3": "col",
         "id": 170,
-        "name": "Колумбия"
+        "name": "Колумбія"
     },
     {
         "alpha2": "KM",
         "alpha3": "com",
         "id": 174,
-        "name": "Коморы"
+        "name": "Коморські Острови"
+    },
+    {
+        "alpha2": "CG",
+        "alpha3": "cog",
+        "id": 178,
+        "name": "Республіка Конго"
     },
     {
         "alpha2": "CR",
@@ -489,7 +501,7 @@
         "alpha2": "CI",
         "alpha3": "civ",
         "id": 384,
-        "name": "Кот-д’Ивуар"
+        "name": "Кот-д'Івуар"
     },
     {
         "alpha2": "CU",
@@ -513,7 +525,7 @@
         "alpha2": "LV",
         "alpha3": "lva",
         "id": 428,
-        "name": "Латвия"
+        "name": "Латвія"
     },
     {
         "alpha2": "LS",
@@ -522,34 +534,34 @@
         "name": "Лесото"
     },
     {
-        "alpha2": "LR",
-        "alpha3": "lbr",
-        "id": 430,
-        "name": "Либерия"
-    },
-    {
-        "alpha2": "LB",
-        "alpha3": "lbn",
-        "id": 422,
-        "name": "Ливан"
-    },
-    {
-        "alpha2": "LY",
-        "alpha3": "lby",
-        "id": 434,
-        "name": "Ливия"
-    },
-    {
         "alpha2": "LT",
         "alpha3": "ltu",
         "id": 440,
         "name": "Литва"
     },
     {
+        "alpha2": "LR",
+        "alpha3": "lbr",
+        "id": 430,
+        "name": "Ліберія"
+    },
+    {
+        "alpha2": "LB",
+        "alpha3": "lbn",
+        "id": 422,
+        "name": "Ліван"
+    },
+    {
+        "alpha2": "LY",
+        "alpha3": "lby",
+        "id": 434,
+        "name": "Лівія"
+    },
+    {
         "alpha2": "LI",
         "alpha3": "lie",
         "id": 438,
-        "name": "Лихтенштейн"
+        "name": "Ліхтенштейн"
     },
     {
         "alpha2": "LU",
@@ -561,13 +573,13 @@
         "alpha2": "MU",
         "alpha3": "mus",
         "id": 480,
-        "name": "Маврикий"
+        "name": "Маврикій"
     },
     {
         "alpha2": "MR",
         "alpha3": "mrt",
         "id": 478,
-        "name": "Мавритания"
+        "name": "Мавританія"
     },
     {
         "alpha2": "MG",
@@ -576,34 +588,28 @@
         "name": "Мадагаскар"
     },
     {
-        "alpha2": "MK",
-        "alpha3": "mkd",
-        "id": 807,
-        "name": "Северная Македония"
-    },
-    {
         "alpha2": "MW",
         "alpha3": "mwi",
         "id": 454,
-        "name": "Малави"
+        "name": "Малаві"
     },
     {
         "alpha2": "MY",
         "alpha3": "mys",
         "id": 458,
-        "name": "Малайзия"
+        "name": "Малайзія"
     },
     {
         "alpha2": "ML",
         "alpha3": "mli",
         "id": 466,
-        "name": "Мали"
+        "name": "Малі"
     },
     {
         "alpha2": "MV",
         "alpha3": "mdv",
         "id": 462,
-        "name": "Мальдивы"
+        "name": "Мальдіви"
     },
     {
         "alpha2": "MT",
@@ -621,7 +627,7 @@
         "alpha2": "MH",
         "alpha3": "mhl",
         "id": 584,
-        "name": "Маршалловы Острова"
+        "name": "Маршаллові Острови"
     },
     {
         "alpha2": "MX",
@@ -630,22 +636,16 @@
         "name": "Мексика"
     },
     {
-        "alpha2": "FM",
-        "alpha3": "fsm",
-        "id": 583,
-        "name": "Микронезия"
-    },
-    {
         "alpha2": "MZ",
         "alpha3": "moz",
         "id": 508,
-        "name": "Мозамбик"
+        "name": "Мозамбік"
     },
     {
         "alpha2": "MD",
         "alpha3": "mda",
         "id": 498,
-        "name": "Молдавия"
+        "name": "Молдова"
     },
     {
         "alpha2": "MC",
@@ -657,19 +657,19 @@
         "alpha2": "MN",
         "alpha3": "mng",
         "id": 496,
-        "name": "Монголия"
+        "name": "Монголія"
     },
     {
         "alpha2": "MM",
         "alpha3": "mmr",
         "id": 104,
-        "name": "Мьянма"
+        "name": "М'янма"
     },
     {
         "alpha2": "NA",
         "alpha3": "nam",
         "id": 516,
-        "name": "Намибия"
+        "name": "Намібія"
     },
     {
         "alpha2": "NR",
@@ -687,43 +687,49 @@
         "alpha2": "NE",
         "alpha3": "ner",
         "id": 562,
-        "name": "Нигер"
+        "name": "Нігер"
     },
     {
         "alpha2": "NG",
         "alpha3": "nga",
         "id": 566,
-        "name": "Нигерия"
+        "name": "Нігерія"
     },
     {
         "alpha2": "NL",
         "alpha3": "nld",
         "id": 528,
-        "name": "Нидерланды"
+        "name": "Нідерланди"
     },
     {
         "alpha2": "NI",
         "alpha3": "nic",
         "id": 558,
-        "name": "Никарагуа"
+        "name": "Нікарагуа"
+    },
+    {
+        "alpha2": "DE",
+        "alpha3": "deu",
+        "id": 276,
+        "name": "Німеччина"
     },
     {
         "alpha2": "NZ",
         "alpha3": "nzl",
         "id": 554,
-        "name": "Новая Зеландия"
+        "name": "Нова Зеландія"
     },
     {
         "alpha2": "NO",
         "alpha3": "nor",
         "id": 578,
-        "name": "Норвегия"
+        "name": "Норвегія"
     },
     {
         "alpha2": "AE",
         "alpha3": "are",
         "id": 784,
-        "name": "ОАЭ"
+        "name": "ОАЕ"
     },
     {
         "alpha2": "OM",
@@ -753,7 +759,7 @@
         "alpha2": "PG",
         "alpha3": "png",
         "id": 598,
-        "name": "Папуа — Новая Гвинея"
+        "name": "Папуа Нова Гвінея"
     },
     {
         "alpha2": "PY",
@@ -768,34 +774,52 @@
         "name": "Перу"
     },
     {
-        "alpha2": "PL",
-        "alpha3": "pol",
-        "id": 616,
-        "name": "Польша"
-    },
-    {
-        "alpha2": "PT",
-        "alpha3": "prt",
-        "id": 620,
-        "name": "Португалия"
-    },
-    {
-        "alpha2": "CG",
-        "alpha3": "cog",
-        "id": 178,
-        "name": "Республика Конго"
+        "alpha2": "ZA",
+        "alpha3": "zaf",
+        "id": 710,
+        "name": "ПАР"
     },
     {
         "alpha2": "KR",
         "alpha3": "kor",
         "id": 410,
-        "name": "Республика Корея"
+        "name": "Південна Корея"
+    },
+    {
+        "alpha2": "SS",
+        "alpha3": "ssd",
+        "id": 728,
+        "name": "Південний Судан"
+    },
+    {
+        "alpha2": "KP",
+        "alpha3": "prk",
+        "id": 408,
+        "name": "Північна Корея"
+    },
+    {
+        "alpha2": "MK",
+        "alpha3": "mkd",
+        "id": 807,
+        "name": "Північна Македонія"
+    },
+    {
+        "alpha2": "PL",
+        "alpha3": "pol",
+        "id": 616,
+        "name": "Польща"
+    },
+    {
+        "alpha2": "PT",
+        "alpha3": "prt",
+        "id": 620,
+        "name": "Португалія"
     },
     {
         "alpha2": "RU",
         "alpha3": "rus",
         "id": 643,
-        "name": "Россия"
+        "name": "Росія"
     },
     {
         "alpha2": "RW",
@@ -807,7 +831,7 @@
         "alpha2": "RO",
         "alpha3": "rou",
         "id": 642,
-        "name": "Румыния"
+        "name": "Румунія"
     },
     {
         "alpha2": "SV",
@@ -831,25 +855,25 @@
         "alpha2": "ST",
         "alpha3": "stp",
         "id": 678,
-        "name": "Сан-Томе и Принсипи"
+        "name": "Сан-Томе і Принсіпі"
     },
     {
         "alpha2": "SA",
         "alpha3": "sau",
         "id": 682,
-        "name": "Саудовская Аравия"
+        "name": "Саудівська Аравія"
     },
     {
         "alpha2": "SZ",
         "alpha3": "swz",
         "id": 748,
-        "name": "Эсватини"
+        "name": "Есватіні"
     },
     {
         "alpha2": "SC",
         "alpha3": "syc",
         "id": 690,
-        "name": "Сейшельские Острова"
+        "name": "Сейшельські Острови"
     },
     {
         "alpha2": "SN",
@@ -861,61 +885,67 @@
         "alpha2": "VC",
         "alpha3": "vct",
         "id": 670,
-        "name": "Сент-Винсент и Гренадины"
+        "name": "Сент-Вінсент і Гренадини"
     },
     {
         "alpha2": "KN",
         "alpha3": "kna",
         "id": 659,
-        "name": "Сент-Китс и Невис"
+        "name": "Сент-Кіттс і Невіс"
     },
     {
         "alpha2": "LC",
         "alpha3": "lca",
         "id": 662,
-        "name": "Сент-Люсия"
+        "name": "Сент-Люсія"
     },
     {
         "alpha2": "RS",
         "alpha3": "srb",
         "id": 688,
-        "name": "Сербия"
-    },
-    {
-        "alpha2": "SG",
-        "alpha3": "sgp",
-        "id": 702,
-        "name": "Сингапур"
+        "name": "Сербія"
     },
     {
         "alpha2": "SY",
         "alpha3": "syr",
         "id": 760,
-        "name": "Сирия"
+        "name": "Сирія"
+    },
+    {
+        "alpha2": "SG",
+        "alpha3": "sgp",
+        "id": 702,
+        "name": "Сінгапур"
     },
     {
         "alpha2": "SK",
         "alpha3": "svk",
         "id": 703,
-        "name": "Словакия"
+        "name": "Словаччина"
     },
     {
         "alpha2": "SI",
         "alpha3": "svn",
         "id": 705,
-        "name": "Словения"
+        "name": "Словенія"
     },
     {
         "alpha2": "SB",
         "alpha3": "slb",
         "id": 90,
-        "name": "Соломоновы Острова"
+        "name": "Соломонові Острови"
     },
     {
         "alpha2": "SO",
         "alpha3": "som",
         "id": 706,
-        "name": "Сомали"
+        "name": "Сомалі"
+    },
+    {
+        "alpha2": "US",
+        "alpha3": "usa",
+        "id": 840,
+        "name": "США"
     },
     {
         "alpha2": "SD",
@@ -930,16 +960,16 @@
         "name": "Суринам"
     },
     {
-        "alpha2": "US",
-        "alpha3": "usa",
-        "id": 840,
-        "name": "США"
+        "alpha2": "TL",
+        "alpha3": "tls",
+        "id": 626,
+        "name": "Східний Тимор"
     },
     {
         "alpha2": "SL",
         "alpha3": "sle",
         "id": 694,
-        "name": "Сьерра-Леоне"
+        "name": "Сьєрра-Леоне"
     },
     {
         "alpha2": "TJ",
@@ -951,13 +981,13 @@
         "alpha2": "TH",
         "alpha3": "tha",
         "id": 764,
-        "name": "Таиланд"
+        "name": "Таїланд"
     },
     {
         "alpha2": "TZ",
         "alpha3": "tza",
         "id": 834,
-        "name": "Танзания"
+        "name": "Танзанія"
     },
     {
         "alpha2": "TG",
@@ -975,7 +1005,7 @@
         "alpha2": "TT",
         "alpha3": "tto",
         "id": 780,
-        "name": "Тринидад и Тобаго"
+        "name": "Тринідад і Тобаго"
     },
     {
         "alpha2": "TV",
@@ -987,25 +1017,31 @@
         "alpha2": "TN",
         "alpha3": "tun",
         "id": 788,
-        "name": "Тунис"
-    },
-    {
-        "alpha2": "TM",
-        "alpha3": "tkm",
-        "id": 795,
-        "name": "Туркменистан"
+        "name": "Туніс"
     },
     {
         "alpha2": "TR",
         "alpha3": "tur",
         "id": 792,
-        "name": "Турция"
+        "name": "Туреччина"
+    },
+    {
+        "alpha2": "TM",
+        "alpha3": "tkm",
+        "id": 795,
+        "name": "Туркменістан"
     },
     {
         "alpha2": "UG",
         "alpha3": "uga",
         "id": 800,
         "name": "Уганда"
+    },
+    {
+        "alpha2": "HU",
+        "alpha3": "hun",
+        "id": 348,
+        "name": "Угорщина"
     },
     {
         "alpha2": "UZ",
@@ -1017,7 +1053,7 @@
         "alpha2": "UA",
         "alpha3": "ukr",
         "id": 804,
-        "name": "Украина"
+        "name": "Україна"
     },
     {
         "alpha2": "UY",
@@ -1026,40 +1062,46 @@
         "name": "Уругвай"
     },
     {
+        "alpha2": "FM",
+        "alpha3": "fsm",
+        "id": 583,
+        "name": "Федеративні Штати Мікронезії"
+    },
+    {
         "alpha2": "FJ",
         "alpha3": "fji",
         "id": 242,
-        "name": "Фиджи"
+        "name": "Фіджі"
     },
     {
         "alpha2": "PH",
         "alpha3": "phl",
         "id": 608,
-        "name": "Филиппины"
+        "name": "Філіппіни"
     },
     {
         "alpha2": "FI",
         "alpha3": "fin",
         "id": 246,
-        "name": "Финляндия"
+        "name": "Фінляндія"
     },
     {
         "alpha2": "FR",
         "alpha3": "fra",
         "id": 250,
-        "name": "Франция"
+        "name": "Франція"
     },
     {
         "alpha2": "HR",
         "alpha3": "hrv",
         "id": 191,
-        "name": "Хорватия"
+        "name": "Хорватія"
     },
     {
         "alpha2": "CF",
         "alpha3": "caf",
         "id": 140,
-        "name": "ЦАР"
+        "name": "Центральноафриканська Республіка"
     },
     {
         "alpha2": "TD",
@@ -1068,82 +1110,40 @@
         "name": "Чад"
     },
     {
-        "alpha2": "ME",
-        "alpha3": "mne",
-        "id": 499,
-        "name": "Черногория"
-    },
-    {
         "alpha2": "CZ",
         "alpha3": "cze",
         "id": 203,
-        "name": "Чехия"
+        "name": "Чехія"
     },
     {
         "alpha2": "CL",
         "alpha3": "chl",
         "id": 152,
-        "name": "Чили"
+        "name": "Чилі"
+    },
+    {
+        "alpha2": "ME",
+        "alpha3": "mne",
+        "id": 499,
+        "name": "Чорногорія"
     },
     {
         "alpha2": "CH",
         "alpha3": "che",
         "id": 756,
-        "name": "Швейцария"
+        "name": "Швейцарія"
     },
     {
         "alpha2": "SE",
         "alpha3": "swe",
         "id": 752,
-        "name": "Швеция"
+        "name": "Швеція"
     },
     {
         "alpha2": "LK",
         "alpha3": "lka",
         "id": 144,
-        "name": "Шри-Ланка"
-    },
-    {
-        "alpha2": "EC",
-        "alpha3": "ecu",
-        "id": 218,
-        "name": "Эквадор"
-    },
-    {
-        "alpha2": "GQ",
-        "alpha3": "gnq",
-        "id": 226,
-        "name": "Экваториальная Гвинея"
-    },
-    {
-        "alpha2": "ER",
-        "alpha3": "eri",
-        "id": 232,
-        "name": "Эритрея"
-    },
-    {
-        "alpha2": "EE",
-        "alpha3": "est",
-        "id": 233,
-        "name": "Эстония"
-    },
-    {
-        "alpha2": "ET",
-        "alpha3": "eth",
-        "id": 231,
-        "name": "Эфиопия"
-    },
-    {
-        "alpha2": "ZA",
-        "alpha3": "zaf",
-        "id": 710,
-        "name": "ЮАР"
-    },
-    {
-        "alpha2": "SS",
-        "alpha3": "ssd",
-        "id": 728,
-        "name": "Южный Судан"
+        "name": "Шрі-Ланка"
     },
     {
         "alpha2": "JM",
@@ -1155,6 +1155,6 @@
         "alpha2": "JP",
         "alpha3": "jpn",
         "id": 392,
-        "name": "Япония"
+        "name": "Японія"
     }
 ]

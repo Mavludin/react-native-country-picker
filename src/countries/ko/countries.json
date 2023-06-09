@@ -1,0 +1,1160 @@
+[
+    {
+        "alpha2": "GH",
+        "alpha3": "gha",
+        "id": 288,
+        "name": "가나"
+    },
+    {
+        "alpha2": "GA",
+        "alpha3": "gab",
+        "id": 266,
+        "name": "가봉"
+    },
+    {
+        "alpha2": "GY",
+        "alpha3": "guy",
+        "id": 328,
+        "name": "가이아나"
+    },
+    {
+        "alpha2": "GM",
+        "alpha3": "gmb",
+        "id": 270,
+        "name": "감비아"
+    },
+    {
+        "alpha2": "GT",
+        "alpha3": "gtm",
+        "id": 320,
+        "name": "과테말라"
+    },
+    {
+        "alpha2": "GD",
+        "alpha3": "grd",
+        "id": 308,
+        "name": "그레나다"
+    },
+    {
+        "alpha2": "GR",
+        "alpha3": "grc",
+        "id": 300,
+        "name": "그리스"
+    },
+    {
+        "alpha2": "GN",
+        "alpha3": "gin",
+        "id": 324,
+        "name": "기니"
+    },
+    {
+        "alpha2": "GW",
+        "alpha3": "gnb",
+        "id": 624,
+        "name": "기니비사우"
+    },
+    {
+        "alpha2": "NA",
+        "alpha3": "nam",
+        "id": 516,
+        "name": "나미비아"
+    },
+    {
+        "alpha2": "NR",
+        "alpha3": "nru",
+        "id": 520,
+        "name": "나우루"
+    },
+    {
+        "alpha2": "NG",
+        "alpha3": "nga",
+        "id": 566,
+        "name": "나이지리아"
+    },
+    {
+        "alpha2": "SS",
+        "alpha3": "ssd",
+        "id": 728,
+        "name": "남수단"
+    },
+    {
+        "alpha2": "ZA",
+        "alpha3": "zaf",
+        "id": 710,
+        "name": "남아프리카 공화국"
+    },
+    {
+        "alpha2": "NL",
+        "alpha3": "nld",
+        "id": 528,
+        "name": "네덜란드"
+    },
+    {
+        "alpha2": "NP",
+        "alpha3": "npl",
+        "id": 524,
+        "name": "네팔"
+    },
+    {
+        "alpha2": "NO",
+        "alpha3": "nor",
+        "id": 578,
+        "name": "노르웨이"
+    },
+    {
+        "alpha2": "NZ",
+        "alpha3": "nzl",
+        "id": 554,
+        "name": "뉴질랜드"
+    },
+    {
+        "alpha2": "NE",
+        "alpha3": "ner",
+        "id": 562,
+        "name": "니제르"
+    },
+    {
+        "alpha2": "NI",
+        "alpha3": "nic",
+        "id": 558,
+        "name": "니카라과"
+    },
+    {
+        "alpha2": "KR",
+        "alpha3": "kor",
+        "id": 410,
+        "name": "대한민국"
+    },
+    {
+        "alpha2": "DK",
+        "alpha3": "dnk",
+        "id": 208,
+        "name": "덴마크"
+    },
+    {
+        "alpha2": "DO",
+        "alpha3": "dom",
+        "id": 214,
+        "name": "도미니카 공화국"
+    },
+    {
+        "alpha2": "DM",
+        "alpha3": "dma",
+        "id": 212,
+        "name": "도미니카 연방"
+    },
+    {
+        "alpha2": "DE",
+        "alpha3": "deu",
+        "id": 276,
+        "name": "독일"
+    },
+    {
+        "alpha2": "TL",
+        "alpha3": "tls",
+        "id": 626,
+        "name": "동티모르"
+    },
+    {
+        "alpha2": "LA",
+        "alpha3": "lao",
+        "id": 418,
+        "name": "라오스"
+    },
+    {
+        "alpha2": "LR",
+        "alpha3": "lbr",
+        "id": 430,
+        "name": "라이베리아"
+    },
+    {
+        "alpha2": "LV",
+        "alpha3": "lva",
+        "id": 428,
+        "name": "라트비아"
+    },
+    {
+        "alpha2": "RU",
+        "alpha3": "rus",
+        "id": 643,
+        "name": "러시아"
+    },
+    {
+        "alpha2": "LB",
+        "alpha3": "lbn",
+        "id": 422,
+        "name": "레바논"
+    },
+    {
+        "alpha2": "LS",
+        "alpha3": "lso",
+        "id": 426,
+        "name": "레소토"
+    },
+    {
+        "alpha2": "RO",
+        "alpha3": "rou",
+        "id": 642,
+        "name": "루마니아"
+    },
+    {
+        "alpha2": "LU",
+        "alpha3": "lux",
+        "id": 442,
+        "name": "룩셈부르크"
+    },
+    {
+        "alpha2": "RW",
+        "alpha3": "rwa",
+        "id": 646,
+        "name": "르완다"
+    },
+    {
+        "alpha2": "LY",
+        "alpha3": "lby",
+        "id": 434,
+        "name": "리비아"
+    },
+    {
+        "alpha2": "LT",
+        "alpha3": "ltu",
+        "id": 440,
+        "name": "리투아니아"
+    },
+    {
+        "alpha2": "LI",
+        "alpha3": "lie",
+        "id": 438,
+        "name": "리히텐슈타인"
+    },
+    {
+        "alpha2": "MG",
+        "alpha3": "mdg",
+        "id": 450,
+        "name": "마다가스카르"
+    },
+    {
+        "alpha2": "MH",
+        "alpha3": "mhl",
+        "id": 584,
+        "name": "마셜 제도"
+    },
+    {
+        "alpha2": "MK",
+        "alpha3": "mkd",
+        "id": 807,
+        "name": "북마케도니아"
+    },
+    {
+        "alpha2": "MW",
+        "alpha3": "mwi",
+        "id": 454,
+        "name": "말라위"
+    },
+    {
+        "alpha2": "MY",
+        "alpha3": "mys",
+        "id": 458,
+        "name": "말레이시아"
+    },
+    {
+        "alpha2": "ML",
+        "alpha3": "mli",
+        "id": 466,
+        "name": "말리"
+    },
+    {
+        "alpha2": "MX",
+        "alpha3": "mex",
+        "id": 484,
+        "name": "멕시코"
+    },
+    {
+        "alpha2": "MC",
+        "alpha3": "mco",
+        "id": 492,
+        "name": "모나코"
+    },
+    {
+        "alpha2": "MA",
+        "alpha3": "mar",
+        "id": 504,
+        "name": "모로코"
+    },
+    {
+        "alpha2": "MU",
+        "alpha3": "mus",
+        "id": 480,
+        "name": "모리셔스"
+    },
+    {
+        "alpha2": "MR",
+        "alpha3": "mrt",
+        "id": 478,
+        "name": "모리타니"
+    },
+    {
+        "alpha2": "MZ",
+        "alpha3": "moz",
+        "id": 508,
+        "name": "모잠비크"
+    },
+    {
+        "alpha2": "ME",
+        "alpha3": "mne",
+        "id": 499,
+        "name": "몬테네그로"
+    },
+    {
+        "alpha2": "MD",
+        "alpha3": "mda",
+        "id": 498,
+        "name": "몰도바"
+    },
+    {
+        "alpha2": "MV",
+        "alpha3": "mdv",
+        "id": 462,
+        "name": "몰디브"
+    },
+    {
+        "alpha2": "MT",
+        "alpha3": "mlt",
+        "id": 470,
+        "name": "몰타"
+    },
+    {
+        "alpha2": "MN",
+        "alpha3": "mng",
+        "id": 496,
+        "name": "몽골"
+    },
+    {
+        "alpha2": "US",
+        "alpha3": "usa",
+        "id": 840,
+        "name": "미국"
+    },
+    {
+        "alpha2": "MM",
+        "alpha3": "mmr",
+        "id": 104,
+        "name": "미얀마"
+    },
+    {
+        "alpha2": "FM",
+        "alpha3": "fsm",
+        "id": 583,
+        "name": "미크로네시아 연방"
+    },
+    {
+        "alpha2": "VU",
+        "alpha3": "vut",
+        "id": 548,
+        "name": "바누아투"
+    },
+    {
+        "alpha2": "BH",
+        "alpha3": "bhr",
+        "id": 48,
+        "name": "바레인"
+    },
+    {
+        "alpha2": "BB",
+        "alpha3": "brb",
+        "id": 52,
+        "name": "바베이도스"
+    },
+    {
+        "alpha2": "BS",
+        "alpha3": "bhs",
+        "id": 44,
+        "name": "바하마"
+    },
+    {
+        "alpha2": "BD",
+        "alpha3": "bgd",
+        "id": 50,
+        "name": "방글라데시"
+    },
+    {
+        "alpha2": "BJ",
+        "alpha3": "ben",
+        "id": 204,
+        "name": "베냉"
+    },
+    {
+        "alpha2": "VE",
+        "alpha3": "ven",
+        "id": 862,
+        "name": "베네수엘라"
+    },
+    {
+        "alpha2": "VN",
+        "alpha3": "vnm",
+        "id": 704,
+        "name": "베트남"
+    },
+    {
+        "alpha2": "BE",
+        "alpha3": "bel",
+        "id": 56,
+        "name": "벨기에"
+    },
+    {
+        "alpha2": "BY",
+        "alpha3": "blr",
+        "id": 112,
+        "name": "벨라루스"
+    },
+    {
+        "alpha2": "BZ",
+        "alpha3": "blz",
+        "id": 84,
+        "name": "벨리즈"
+    },
+    {
+        "alpha2": "BA",
+        "alpha3": "bih",
+        "id": 70,
+        "name": "보스니아 헤르체고비나"
+    },
+    {
+        "alpha2": "BW",
+        "alpha3": "bwa",
+        "id": 72,
+        "name": "보츠와나"
+    },
+    {
+        "alpha2": "BO",
+        "alpha3": "bol",
+        "id": 68,
+        "name": "볼리비아"
+    },
+    {
+        "alpha2": "BI",
+        "alpha3": "bdi",
+        "id": 108,
+        "name": "부룬디"
+    },
+    {
+        "alpha2": "BF",
+        "alpha3": "bfa",
+        "id": 854,
+        "name": "부르키나파소"
+    },
+    {
+        "alpha2": "BT",
+        "alpha3": "btn",
+        "id": 64,
+        "name": "부탄"
+    },
+    {
+        "alpha2": "BG",
+        "alpha3": "bgr",
+        "id": 100,
+        "name": "불가리아"
+    },
+    {
+        "alpha2": "BR",
+        "alpha3": "bra",
+        "id": 76,
+        "name": "브라질"
+    },
+    {
+        "alpha2": "BN",
+        "alpha3": "brn",
+        "id": 96,
+        "name": "브루나이"
+    },
+    {
+        "alpha2": "WS",
+        "alpha3": "wsm",
+        "id": 882,
+        "name": "사모아"
+    },
+    {
+        "alpha2": "SA",
+        "alpha3": "sau",
+        "id": 682,
+        "name": "사우디아라비아"
+    },
+    {
+        "alpha2": "SM",
+        "alpha3": "smr",
+        "id": 674,
+        "name": "산마리노"
+    },
+    {
+        "alpha2": "ST",
+        "alpha3": "stp",
+        "id": 678,
+        "name": "상투메 프린시페"
+    },
+    {
+        "alpha2": "SN",
+        "alpha3": "sen",
+        "id": 686,
+        "name": "세네갈"
+    },
+    {
+        "alpha2": "RS",
+        "alpha3": "srb",
+        "id": 688,
+        "name": "세르비아"
+    },
+    {
+        "alpha2": "SC",
+        "alpha3": "syc",
+        "id": 690,
+        "name": "세이셸"
+    },
+    {
+        "alpha2": "LC",
+        "alpha3": "lca",
+        "id": 662,
+        "name": "세인트루시아"
+    },
+    {
+        "alpha2": "VC",
+        "alpha3": "vct",
+        "id": 670,
+        "name": "세인트빈센트 그레나딘"
+    },
+    {
+        "alpha2": "KN",
+        "alpha3": "kna",
+        "id": 659,
+        "name": "세인트키츠 네비스"
+    },
+    {
+        "alpha2": "SO",
+        "alpha3": "som",
+        "id": 706,
+        "name": "소말리아"
+    },
+    {
+        "alpha2": "SB",
+        "alpha3": "slb",
+        "id": 90,
+        "name": "솔로몬 제도"
+    },
+    {
+        "alpha2": "SD",
+        "alpha3": "sdn",
+        "id": 729,
+        "name": "수단"
+    },
+    {
+        "alpha2": "SR",
+        "alpha3": "sur",
+        "id": 740,
+        "name": "수리남"
+    },
+    {
+        "alpha2": "LK",
+        "alpha3": "lka",
+        "id": 144,
+        "name": "스리랑카"
+    },
+    {
+        "alpha2": "SE",
+        "alpha3": "swe",
+        "id": 752,
+        "name": "스웨덴"
+    },
+    {
+        "alpha2": "CH",
+        "alpha3": "che",
+        "id": 756,
+        "name": "스위스"
+    },
+    {
+        "alpha2": "ES",
+        "alpha3": "esp",
+        "id": 724,
+        "name": "스페인"
+    },
+    {
+        "alpha2": "SK",
+        "alpha3": "svk",
+        "id": 703,
+        "name": "슬로바키아"
+    },
+    {
+        "alpha2": "SI",
+        "alpha3": "svn",
+        "id": 705,
+        "name": "슬로베니아"
+    },
+    {
+        "alpha2": "SY",
+        "alpha3": "syr",
+        "id": 760,
+        "name": "시리아"
+    },
+    {
+        "alpha2": "SL",
+        "alpha3": "sle",
+        "id": 694,
+        "name": "시에라리온"
+    },
+    {
+        "alpha2": "SG",
+        "alpha3": "sgp",
+        "id": 702,
+        "name": "싱가포르"
+    },
+    {
+        "alpha2": "AE",
+        "alpha3": "are",
+        "id": 784,
+        "name": "아랍에미리트"
+    },
+    {
+        "alpha2": "AM",
+        "alpha3": "arm",
+        "id": 51,
+        "name": "아르메니아"
+    },
+    {
+        "alpha2": "AR",
+        "alpha3": "arg",
+        "id": 32,
+        "name": "아르헨티나"
+    },
+    {
+        "alpha2": "IS",
+        "alpha3": "isl",
+        "id": 352,
+        "name": "아이슬란드"
+    },
+    {
+        "alpha2": "HT",
+        "alpha3": "hti",
+        "id": 332,
+        "name": "아이티"
+    },
+    {
+        "alpha2": "IE",
+        "alpha3": "irl",
+        "id": 372,
+        "name": "아일랜드"
+    },
+    {
+        "alpha2": "AZ",
+        "alpha3": "aze",
+        "id": 31,
+        "name": "아제르바이잔"
+    },
+    {
+        "alpha2": "AF",
+        "alpha3": "afg",
+        "id": 4,
+        "name": "아프가니스탄"
+    },
+    {
+        "alpha2": "AD",
+        "alpha3": "and",
+        "id": 20,
+        "name": "안도라"
+    },
+    {
+        "alpha2": "AL",
+        "alpha3": "alb",
+        "id": 8,
+        "name": "알바니아"
+    },
+    {
+        "alpha2": "DZ",
+        "alpha3": "dza",
+        "id": 12,
+        "name": "알제리"
+    },
+    {
+        "alpha2": "AO",
+        "alpha3": "ago",
+        "id": 24,
+        "name": "앙골라"
+    },
+    {
+        "alpha2": "AG",
+        "alpha3": "atg",
+        "id": 28,
+        "name": "앤티가 바부다"
+    },
+    {
+        "alpha2": "ER",
+        "alpha3": "eri",
+        "id": 232,
+        "name": "에리트레아"
+    },
+    {
+        "alpha2": "SZ",
+        "alpha3": "swz",
+        "id": 748,
+        "name": "에스와티니"
+    },
+    {
+        "alpha2": "EE",
+        "alpha3": "est",
+        "id": 233,
+        "name": "에스토니아"
+    },
+    {
+        "alpha2": "EC",
+        "alpha3": "ecu",
+        "id": 218,
+        "name": "에콰도르"
+    },
+    {
+        "alpha2": "ET",
+        "alpha3": "eth",
+        "id": 231,
+        "name": "에티오피아"
+    },
+    {
+        "alpha2": "SV",
+        "alpha3": "slv",
+        "id": 222,
+        "name": "엘살바도르"
+    },
+    {
+        "alpha2": "GB",
+        "alpha3": "gbr",
+        "id": 826,
+        "name": "영국"
+    },
+    {
+        "alpha2": "YE",
+        "alpha3": "yem",
+        "id": 887,
+        "name": "예멘"
+    },
+    {
+        "alpha2": "OM",
+        "alpha3": "omn",
+        "id": 512,
+        "name": "오만"
+    },
+    {
+        "alpha2": "AU",
+        "alpha3": "aus",
+        "id": 36,
+        "name": "오스트레일리아"
+    },
+    {
+        "alpha2": "AT",
+        "alpha3": "aut",
+        "id": 40,
+        "name": "오스트리아"
+    },
+    {
+        "alpha2": "HN",
+        "alpha3": "hnd",
+        "id": 340,
+        "name": "온두라스"
+    },
+    {
+        "alpha2": "JO",
+        "alpha3": "jor",
+        "id": 400,
+        "name": "요르단"
+    },
+    {
+        "alpha2": "UG",
+        "alpha3": "uga",
+        "id": 800,
+        "name": "우간다"
+    },
+    {
+        "alpha2": "UY",
+        "alpha3": "ury",
+        "id": 858,
+        "name": "우루과이"
+    },
+    {
+        "alpha2": "UZ",
+        "alpha3": "uzb",
+        "id": 860,
+        "name": "우즈베키스탄"
+    },
+    {
+        "alpha2": "UA",
+        "alpha3": "ukr",
+        "id": 804,
+        "name": "우크라이나"
+    },
+    {
+        "alpha2": "IQ",
+        "alpha3": "irq",
+        "id": 368,
+        "name": "이라크"
+    },
+    {
+        "alpha2": "IR",
+        "alpha3": "irn",
+        "id": 364,
+        "name": "이란"
+    },
+    {
+        "alpha2": "IL",
+        "alpha3": "isr",
+        "id": 376,
+        "name": "이스라엘"
+    },
+    {
+        "alpha2": "EG",
+        "alpha3": "egy",
+        "id": 818,
+        "name": "이집트"
+    },
+    {
+        "alpha2": "IT",
+        "alpha3": "ita",
+        "id": 380,
+        "name": "이탈리아"
+    },
+    {
+        "alpha2": "IN",
+        "alpha3": "ind",
+        "id": 356,
+        "name": "인도"
+    },
+    {
+        "alpha2": "ID",
+        "alpha3": "idn",
+        "id": 360,
+        "name": "인도네시아"
+    },
+    {
+        "alpha2": "JP",
+        "alpha3": "jpn",
+        "id": 392,
+        "name": "일본"
+    },
+    {
+        "alpha2": "JM",
+        "alpha3": "jam",
+        "id": 388,
+        "name": "자메이카"
+    },
+    {
+        "alpha2": "ZM",
+        "alpha3": "zmb",
+        "id": 894,
+        "name": "잠비아"
+    },
+    {
+        "alpha2": "GQ",
+        "alpha3": "gnq",
+        "id": 226,
+        "name": "적도 기니"
+    },
+    {
+        "alpha2": "KP",
+        "alpha3": "prk",
+        "id": 408,
+        "name": "조선민주주의인민공화국"
+    },
+    {
+        "alpha2": "GE",
+        "alpha3": "geo",
+        "id": 268,
+        "name": "조지아"
+    },
+    {
+        "alpha2": "CN",
+        "alpha3": "chn",
+        "id": 156,
+        "name": "중국"
+    },
+    {
+        "alpha2": "CF",
+        "alpha3": "caf",
+        "id": 140,
+        "name": "중앙아프리카 공화국"
+    },
+    {
+        "alpha2": "DJ",
+        "alpha3": "dji",
+        "id": 262,
+        "name": "지부티"
+    },
+    {
+        "alpha2": "ZW",
+        "alpha3": "zwe",
+        "id": 716,
+        "name": "짐바브웨"
+    },
+    {
+        "alpha2": "TD",
+        "alpha3": "tcd",
+        "id": 148,
+        "name": "차드"
+    },
+    {
+        "alpha2": "CZ",
+        "alpha3": "cze",
+        "id": 203,
+        "name": "체코"
+    },
+    {
+        "alpha2": "CL",
+        "alpha3": "chl",
+        "id": 152,
+        "name": "칠레"
+    },
+    {
+        "alpha2": "CM",
+        "alpha3": "cmr",
+        "id": 120,
+        "name": "카메룬"
+    },
+    {
+        "alpha2": "CV",
+        "alpha3": "cpv",
+        "id": 132,
+        "name": "카보베르데"
+    },
+    {
+        "alpha2": "KZ",
+        "alpha3": "kaz",
+        "id": 398,
+        "name": "카자흐스탄"
+    },
+    {
+        "alpha2": "QA",
+        "alpha3": "qat",
+        "id": 634,
+        "name": "카타르"
+    },
+    {
+        "alpha2": "KH",
+        "alpha3": "khm",
+        "id": 116,
+        "name": "캄보디아"
+    },
+    {
+        "alpha2": "CA",
+        "alpha3": "can",
+        "id": 124,
+        "name": "캐나다"
+    },
+    {
+        "alpha2": "KE",
+        "alpha3": "ken",
+        "id": 404,
+        "name": "케냐"
+    },
+    {
+        "alpha2": "KM",
+        "alpha3": "com",
+        "id": 174,
+        "name": "코모로"
+    },
+    {
+        "alpha2": "CR",
+        "alpha3": "cri",
+        "id": 188,
+        "name": "코스타리카"
+    },
+    {
+        "alpha2": "CI",
+        "alpha3": "civ",
+        "id": 384,
+        "name": "코트디부아르"
+    },
+    {
+        "alpha2": "CO",
+        "alpha3": "col",
+        "id": 170,
+        "name": "콜롬비아"
+    },
+    {
+        "alpha2": "CG",
+        "alpha3": "cog",
+        "id": 178,
+        "name": "콩고 공화국"
+    },
+    {
+        "alpha2": "CD",
+        "alpha3": "cod",
+        "id": 180,
+        "name": "콩고 민주 공화국"
+    },
+    {
+        "alpha2": "CU",
+        "alpha3": "cub",
+        "id": 192,
+        "name": "쿠바"
+    },
+    {
+        "alpha2": "KW",
+        "alpha3": "kwt",
+        "id": 414,
+        "name": "쿠웨이트"
+    },
+    {
+        "alpha2": "HR",
+        "alpha3": "hrv",
+        "id": 191,
+        "name": "크로아티아"
+    },
+    {
+        "alpha2": "KG",
+        "alpha3": "kgz",
+        "id": 417,
+        "name": "키르기스스탄"
+    },
+    {
+        "alpha2": "KI",
+        "alpha3": "kir",
+        "id": 296,
+        "name": "키리바시"
+    },
+    {
+        "alpha2": "CY",
+        "alpha3": "cyp",
+        "id": 196,
+        "name": "키프로스"
+    },
+    {
+        "alpha2": "TJ",
+        "alpha3": "tjk",
+        "id": 762,
+        "name": "타지키스탄"
+    },
+    {
+        "alpha2": "TZ",
+        "alpha3": "tza",
+        "id": 834,
+        "name": "탄자니아"
+    },
+    {
+        "alpha2": "TH",
+        "alpha3": "tha",
+        "id": 764,
+        "name": "태국"
+    },
+    {
+        "alpha2": "TR",
+        "alpha3": "tur",
+        "id": 792,
+        "name": "튀르키예"
+    },
+    {
+        "alpha2": "TG",
+        "alpha3": "tgo",
+        "id": 768,
+        "name": "토고"
+    },
+    {
+        "alpha2": "TO",
+        "alpha3": "ton",
+        "id": 776,
+        "name": "통가"
+    },
+    {
+        "alpha2": "TM",
+        "alpha3": "tkm",
+        "id": 795,
+        "name": "투르크메니스탄"
+    },
+    {
+        "alpha2": "TV",
+        "alpha3": "tuv",
+        "id": 798,
+        "name": "투발루"
+    },
+    {
+        "alpha2": "TN",
+        "alpha3": "tun",
+        "id": 788,
+        "name": "튀니지"
+    },
+    {
+        "alpha2": "TT",
+        "alpha3": "tto",
+        "id": 780,
+        "name": "트리니다드 토바고"
+    },
+    {
+        "alpha2": "PA",
+        "alpha3": "pan",
+        "id": 591,
+        "name": "파나마"
+    },
+    {
+        "alpha2": "PY",
+        "alpha3": "pry",
+        "id": 600,
+        "name": "파라과이"
+    },
+    {
+        "alpha2": "PK",
+        "alpha3": "pak",
+        "id": 586,
+        "name": "파키스탄"
+    },
+    {
+        "alpha2": "PG",
+        "alpha3": "png",
+        "id": 598,
+        "name": "파푸아뉴기니"
+    },
+    {
+        "alpha2": "PW",
+        "alpha3": "plw",
+        "id": 585,
+        "name": "팔라우"
+    },
+    {
+        "alpha2": "PE",
+        "alpha3": "per",
+        "id": 604,
+        "name": "페루"
+    },
+    {
+        "alpha2": "PT",
+        "alpha3": "prt",
+        "id": 620,
+        "name": "포르투갈"
+    },
+    {
+        "alpha2": "PL",
+        "alpha3": "pol",
+        "id": 616,
+        "name": "폴란드"
+    },
+    {
+        "alpha2": "FR",
+        "alpha3": "fra",
+        "id": 250,
+        "name": "프랑스"
+    },
+    {
+        "alpha2": "FJ",
+        "alpha3": "fji",
+        "id": 242,
+        "name": "피지"
+    },
+    {
+        "alpha2": "FI",
+        "alpha3": "fin",
+        "id": 246,
+        "name": "핀란드"
+    },
+    {
+        "alpha2": "PH",
+        "alpha3": "phl",
+        "id": 608,
+        "name": "필리핀"
+    },
+    {
+        "alpha2": "HU",
+        "alpha3": "hun",
+        "id": 348,
+        "name": "헝가리"
+    }
+]
