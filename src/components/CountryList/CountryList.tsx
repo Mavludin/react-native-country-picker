@@ -28,44 +28,56 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
   };
 
   const handleChange = (text: string) => {
-    if (text.length > 0) {
-      if (Array.isArray(countries)) {
-        const result = [...countries].filter(country => {
-          return country.name.toLocaleLowerCase().includes(text.toLowerCase());
-        });
-
-        setFilteredList(result);
-      } else {
-        const isEnglish = /[a-z]/gi.test(text);
-
-        if (isEnglish) {
-          const deviceLanguageList = [...countries?.[deviceLanguage]];
-
-          const englishList = [...countries?.en];
-
-          const result = englishList?.filter(country => {
-            return country.name
-              ?.toLocaleLowerCase()
-              .includes(text.toLowerCase());
-          }, []);
-
-          const result1 = deviceLanguageList?.filter(country => {
-            return result?.some(item => item.alpha2 === country.alpha2);
-          });
-
-          console.log(result1);
-
-          setFilteredList({
-            ...countries,
-            [deviceLanguage]: result1,
-          });
-        }
-      }
+    if (text.length < 1) {
+      setFilteredList(undefined);
 
       return;
     }
 
-    setFilteredList(undefined);
+    // If there is only the English language
+    if (Array.isArray(countries)) {
+      const result = [...countries].filter(country => {
+        return country.name.toLowerCase().includes(text.toLowerCase());
+      });
+
+      setFilteredList(result);
+
+      return;
+    }
+
+    // If there are 2 languages
+    const isEnglish = /[a-z]/gi.test(text);
+    const deviceLanguageCountryList = [...countries?.[deviceLanguage]];
+
+    // If user enters English characters
+    if (isEnglish) {
+      const englishCountryList = [...countries?.en];
+
+      const result = englishCountryList?.filter(country => {
+        return country.name?.toLowerCase().includes(text.toLowerCase());
+      }, []);
+
+      const filteredResult = deviceLanguageCountryList?.filter(country => {
+        return result?.some(item => item.alpha2 === country.alpha2);
+      });
+
+      setFilteredList({
+        ...countries,
+        [deviceLanguage]: filteredResult,
+      });
+
+      return;
+    }
+
+    // If user enters characters in the device language
+    const filteredResult = deviceLanguageCountryList?.filter(country => {
+      return country.name?.toLowerCase().includes(text.toLowerCase());
+    }, []);
+
+    setFilteredList({
+      ...countries,
+      [deviceLanguage]: filteredResult,
+    });
   };
 
   return (
