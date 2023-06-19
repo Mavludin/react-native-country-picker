@@ -1,13 +1,16 @@
 import {BottomSheetFlatList, BottomSheetTextInput} from '@gorhom/bottom-sheet';
 import React, {useState} from 'react';
-import {CountryItem, deviceLanguage} from '../../utils/countries';
+import {
+  CountryItem,
+  DoubleCountryItem,
+  SingleCountryItem,
+  deviceLanguageCode,
+} from '../../utils/countries';
 import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
 import {Country} from '../Country/Country';
 import {StyleSheet} from 'react-native';
-import {
-  DoubleCountryItem,
-  SingleCountryItem,
-} from '../CountryBottomSheet/CountryBottomSheet';
+import {filterSingleLanguageList} from '../../utils/filterSingleLanguageList';
+import {filterTwoLanguageList} from '../../utils/filterTwoLanguageList';
 
 type Props = {
   countries: DoubleCountryItem | SingleCountryItem;
@@ -34,49 +37,39 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
       return;
     }
 
+    const lowerCasedInputText = text.toLowerCase();
+
     // If there is only the English language
     if (Array.isArray(countries)) {
-      const result = [...countries].filter(country => {
-        return country.name.toLowerCase().includes(text.toLowerCase());
-      });
-
-      setFilteredList(result);
+      filterSingleLanguageList(text, countries, setFilteredList);
 
       return;
     }
 
     // If there are 2 languages
     const isEnglish = /[a-z]/gi.test(text);
-    const deviceLanguageCountryList = [...countries?.[deviceLanguage]];
+    const deviceLanguageCountryList = [...countries?.[deviceLanguageCode]];
 
     // If user enters English characters
     if (isEnglish) {
-      const englishCountryList = [...countries?.en];
-
-      const result = englishCountryList?.filter(country => {
-        return country.name?.toLowerCase().includes(text.toLowerCase());
-      }, []);
-
-      const filteredResult = deviceLanguageCountryList?.filter(country => {
-        return result?.some(item => item.alpha2 === country.alpha2);
-      });
-
-      setFilteredList({
-        ...countries,
-        [deviceLanguage]: filteredResult,
-      });
+      filterTwoLanguageList(
+        lowerCasedInputText,
+        countries,
+        deviceLanguageCountryList,
+        setFilteredList,
+      );
 
       return;
     }
 
     // If user enters characters in the device language
     const filteredResult = deviceLanguageCountryList?.filter(country => {
-      return country.name?.toLowerCase().includes(text.toLowerCase());
+      return country.name?.toLowerCase().includes(lowerCasedInputText);
     }, []);
 
     setFilteredList({
       ...countries,
-      [deviceLanguage]: filteredResult,
+      [deviceLanguageCode]: filteredResult,
     });
   };
 
@@ -111,7 +104,10 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
         />
       ) : (
         <BottomSheetFlatList
-          data={filteredList?.[deviceLanguage] ?? countries?.[deviceLanguage]}
+          data={
+            filteredList?.[deviceLanguageCode] ??
+            countries?.[deviceLanguageCode]
+          }
           ListHeaderComponent={
             filteredList ? null : (
               <HeaderCountry defaultCountry={defaultCountry} />

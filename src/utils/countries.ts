@@ -1,5 +1,5 @@
 import {ImageSourcePropType} from 'react-native';
-import {getLocales} from 'react-native-localize';
+import {getCountry, getLocales} from 'react-native-localize';
 
 export type LanguageCode =
   | 'ru'
@@ -22,7 +22,14 @@ export type CountryItem = {
   name: string;
 };
 
-export const deviceLanguage = 'ru' as LanguageCode;
+export type DoubleCountryItem =
+  | Record<Partial<LanguageCode>, CountryItem[]>
+  | undefined;
+export type SingleCountryItem = CountryItem[] | undefined;
+
+export const deviceLanguageCode = getLocales()[0].languageCode as LanguageCode;
+
+export const deviceCountryCode = getCountry();
 
 export const countryFlags: Record<string, ImageSourcePropType> = {
   AD: require('../assets/flags/16x16/ad.png'),

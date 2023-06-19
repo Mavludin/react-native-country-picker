@@ -5,19 +5,15 @@ import BottomSheet from '@gorhom/bottom-sheet';
 import {View, useWindowDimensions, Text} from 'react-native';
 import {
   CountryItem,
-  LanguageCode,
-  countriesByLanguage,
-  deviceLanguage,
+  DoubleCountryItem,
+  SingleCountryItem,
+  deviceLanguageCode,
 } from '../../utils/countries';
 import {CountryList} from '../CountryList/CountryList';
-import {getCountry} from 'react-native-localize';
+import {importTwoLanguages} from '../../utils/importTwoLanguages';
+import {importSingleLanguage} from '../../utils/importSingleLanguage';
 
 const SNAP_POINTS = ['10%', '100%'];
-
-export type DoubleCountryItem =
-  | Record<Partial<LanguageCode>, CountryItem[]>
-  | undefined;
-export type SingleCountryItem = CountryItem[] | undefined;
 
 export const CountryBottomSheet = () => {
   const sheetRef = useRef<BottomSheet>(null);
@@ -33,48 +29,22 @@ export const CountryBottomSheet = () => {
 
   const [error, setError] = useState<string | null>(null);
 
-  const importData = async () => {
-    if (deviceLanguage !== 'en') {
-      try {
-        const lang1 = await countriesByLanguage[deviceLanguage]();
-        const lang2 = await countriesByLanguage.en();
+  const importCountries = async () => {
+    if (deviceLanguageCode !== 'en') {
+      await importTwoLanguages(setDefaultCountry, setCountries, setError);
 
-        const data = {
-          [deviceLanguage]: lang1.default,
-          en: lang2.default,
-        } as DoubleCountryItem;
-
-        setDefaultCountry(
-          data?.[deviceLanguage]?.find(
-            country => country.alpha2 === getCountry(),
-          ),
-        );
-        setCountries(data);
-      } catch (error) {
-        console.error('Error importing data:', error);
-        setError('Error importing data');
-      }
-    } else {
-      try {
-        const json = await countriesByLanguage[deviceLanguage]();
-        const data = json.default as CountryItem[];
-        setDefaultCountry(
-          data?.find(country => country.alpha2 === getCountry()),
-        );
-        setCountries(data.filter(country => country.alpha2 !== getCountry()));
-      } catch (error) {
-        console.error('Error importing data:', error);
-        setError('Error importing data');
-      }
+      return;
     }
+
+    importSingleLanguage(setDefaultCountry, setCountries, setError);
   };
 
-  if (!deviceLanguage) {
+  if (!deviceLanguageCode) {
     return null;
   }
 
   if (!countries) {
-    importData();
+    importCountries();
 
     return null;
   }
