@@ -1,4 +1,8 @@
-import {CountryItem, DoubleCountryItem, SingleCountryItem} from './countries';
+import {
+  CountryItem,
+  DoubleCountryItem,
+  SingleCountryItem,
+} from '../libs/world_countries/types';
 
 export const filterSingleLanguageList = (
   lowerCasedInputText: string,

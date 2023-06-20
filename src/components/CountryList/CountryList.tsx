@@ -1,16 +1,17 @@
 import {BottomSheetFlatList, BottomSheetTextInput} from '@gorhom/bottom-sheet';
 import React, {useState} from 'react';
+import {deviceLanguageCode} from '../../utils/countries';
+import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
+import {Country} from '../Country/Country';
+import {StyleSheet, View} from 'react-native';
+import {filterSingleLanguageList} from '../../utils/filterSingleLanguageList';
+import {filterTwoLanguageList} from '../../utils/filterTwoLanguageList';
+import {SearchIcon} from '../SearchIcon/SearchIcon';
 import {
   CountryItem,
   DoubleCountryItem,
   SingleCountryItem,
-  deviceLanguageCode,
-} from '../../utils/countries';
-import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
-import {Country} from '../Country/Country';
-import {StyleSheet} from 'react-native';
-import {filterSingleLanguageList} from '../../utils/filterSingleLanguageList';
-import {filterTwoLanguageList} from '../../utils/filterTwoLanguageList';
+} from '../../libs/world_countries/types';
 
 type Props = {
   countries: DoubleCountryItem | SingleCountryItem;
@@ -75,11 +76,14 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
 
   return (
     <>
-      <BottomSheetTextInput
-        onChangeText={handleChange}
-        style={styles.input}
-        placeholder="Search"
-      />
+      <View style={styles.searchContainer}>
+        <SearchIcon />
+        <BottomSheetTextInput
+          onChangeText={handleChange}
+          style={styles.input}
+          placeholder="Search"
+        />
+      </View>
 
       {Array.isArray(countries) ? (
         <BottomSheetFlatList
@@ -132,15 +136,18 @@ export const CountryList = ({countries, defaultCountry}: Props) => {
 };
 
 const styles = StyleSheet.create({
-  input: {
-    marginBottom: 10,
-    paddingHorizontal: 15,
-    fontSize: 20,
-    lineHeight: 20,
-    padding: 8,
-    color: '#9A9A9A',
+  searchContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
     borderBottomColor: '#CBCBCB',
     borderBottomWidth: 1,
+    paddingHorizontal: 15,
+  },
+  input: {
+    fontSize: 20,
+    lineHeight: 20,
+    color: '#9A9A9A',
+    marginLeft: 10,
   },
   contentContainer: {
     paddingHorizontal: 10,

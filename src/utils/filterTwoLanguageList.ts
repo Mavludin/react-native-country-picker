@@ -1,10 +1,11 @@
+import {deviceLanguageCode} from './countries';
+
 import {
   CountryItem,
   DoubleCountryItem,
-  LanguageCode,
   SingleCountryItem,
-  deviceLanguageCode,
-} from './countries';
+  LanguageCode,
+} from '../libs/world_countries/types';
 
 export const filterTwoLanguageList = (
   lowerCasedInputText: string,

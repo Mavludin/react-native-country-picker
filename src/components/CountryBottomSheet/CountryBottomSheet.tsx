@@ -3,15 +3,15 @@ import React, {useRef, useState} from 'react';
 import BottomSheet from '@gorhom/bottom-sheet';
 
 import {View, useWindowDimensions, Text} from 'react-native';
+import {deviceLanguageCode} from '../../utils/countries';
+import {CountryList} from '../CountryList/CountryList';
+import {importTwoLanguages} from '../../utils/importTwoLanguages';
+import {importSingleLanguage} from '../../utils/importSingleLanguage';
 import {
   CountryItem,
   DoubleCountryItem,
   SingleCountryItem,
-  deviceLanguageCode,
-} from '../../utils/countries';
-import {CountryList} from '../CountryList/CountryList';
-import {importTwoLanguages} from '../../utils/importTwoLanguages';
-import {importSingleLanguage} from '../../utils/importSingleLanguage';
+} from '../../libs/world_countries/types';
 
 const SNAP_POINTS = ['10%', '100%'];
 

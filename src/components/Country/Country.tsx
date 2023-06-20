@@ -1,8 +1,9 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
-import {CountryItem, countryFlags} from '../../utils/countries';
+import {countryFlags} from '../../utils/countries';
 import {CountryFlag} from '../CountryFlag/CountryFlag';
+import {CountryItem} from '../../libs/world_countries/types';
 
 type Props = {
   isActive: boolean;
