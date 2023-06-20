@@ -1,13 +1,9 @@
-import {
-  CountryItem,
-  DoubleCountryItem,
-  SingleCountryItem,
-} from '../libs/world_countries/types';
+import {CountryItem} from '../libs/world_countries/types';
 
 export const filterSingleLanguageList = (
   lowerCasedInputText: string,
   countries: CountryItem[],
-  setFilteredList: (value?: DoubleCountryItem | SingleCountryItem) => void,
+  setFilteredList: (value: CountryItem[] | null) => void,
 ) => {
   const result = [...countries].filter(country => {
     return country.name.toLowerCase().includes(lowerCasedInputText);

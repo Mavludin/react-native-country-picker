@@ -4,14 +4,11 @@ import BottomSheet from '@gorhom/bottom-sheet';
 
 import {View, useWindowDimensions, Text} from 'react-native';
 import {deviceLanguageCode} from '../../utils/countries';
-import {CountryList} from '../CountryList/CountryList';
 import {importTwoLanguages} from '../../utils/importTwoLanguages';
 import {importSingleLanguage} from '../../utils/importSingleLanguage';
-import {
-  CountryItem,
-  DoubleCountryItem,
-  SingleCountryItem,
-} from '../../libs/world_countries/types';
+import {CountryItem, DoubleCountryItem} from '../../libs/world_countries/types';
+import {SingleLangCountryList} from '../SingleLangCountryList/SingleLangCountryList';
+import {TwoLangCountryList} from '../TwoLangCountryList/TwoLangCountryList';
 
 const SNAP_POINTS = ['10%', '100%'];
 
@@ -21,11 +18,9 @@ export const CountryBottomSheet = () => {
   const {height: screenHeight} = useWindowDimensions();
 
   const [countries, setCountries] = useState<
-    DoubleCountryItem | SingleCountryItem
+    DoubleCountryItem | CountryItem[]
   >();
-  const [defaultCountry, setDefaultCountry] = useState<
-    CountryItem | undefined
-  >();
+  const [defaultCountry, setDefaultCountry] = useState<CountryItem>();
 
   const [error, setError] = useState<string | null>(null);
 
@@ -43,7 +38,7 @@ export const CountryBottomSheet = () => {
     return null;
   }
 
-  if (!countries) {
+  if (!countries || !defaultCountry) {
     importCountries();
 
     return null;
@@ -59,7 +54,17 @@ export const CountryBottomSheet = () => {
         ref={sheetRef}
         snapPoints={SNAP_POINTS}
         keyboardBehavior="fillParent">
-        <CountryList countries={countries} defaultCountry={defaultCountry} />
+        {Array.isArray(countries) ? (
+          <SingleLangCountryList
+            countries={countries}
+            defaultCountry={defaultCountry}
+          />
+        ) : (
+          <TwoLangCountryList
+            countries={countries}
+            defaultCountry={defaultCountry}
+          />
+        )}
       </BottomSheet>
     </View>
   );

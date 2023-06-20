@@ -14,9 +14,9 @@ type Props = {
 export const Country = ({country, isActive, onSelect}: Props) => {
   return (
     <View style={isActive ? styles.activeItemContainer : styles.itemContainer}>
-      <CountryFlag imgSrc={countryFlags[country?.alpha2]} />
+      <CountryFlag imgSrc={countryFlags[country.alpha2]} />
       <TouchableOpacity onPress={() => onSelect(country)}>
-        <Text style={styles.coutryName}>{country?.name}</Text>
+        <Text style={styles.coutryName}>{country.name}</Text>
       </TouchableOpacity>
     </View>
   );

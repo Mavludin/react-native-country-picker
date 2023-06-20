@@ -1,17 +1,18 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 import {CountryFlag} from '../CountryFlag/CountryFlag';
-import {CountryItem, countryFlags} from '../../utils/countries';
+import {countryFlags} from '../../utils/countries';
+import {CountryItem} from '../../libs/world_countries/types';
 
 type Props = {
-  defaultCountry?: CountryItem;
+  defaultCountry: CountryItem;
 };
 
 export const HeaderCountry = ({defaultCountry}: Props) => {
   return (
     <View style={styles.itemContainer}>
-      <CountryFlag imgSrc={countryFlags[defaultCountry?.alpha2 || '']} />
-      <Text style={styles.coutryName}>{defaultCountry?.name}</Text>
+      <CountryFlag imgSrc={countryFlags[defaultCountry.alpha2]} />
+      <Text style={styles.coutryName}>{defaultCountry.name}</Text>
       <View style={styles.selectedTextContainer}>
         <Text style={styles.selectedText}>Selected</Text>
       </View>
