@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useCallback, useMemo, useRef, useState} from 'react';
 
 import BottomSheet from '@gorhom/bottom-sheet';
 
@@ -24,7 +24,9 @@ export const CountryBottomSheet = () => {
 
   const [error, setError] = useState<string | null>(null);
 
-  const importCountries = async () => {
+  const memoizedCountries = useMemo(() => countries, [countries]);
+
+  const importCountries = useCallback(async () => {
     if (deviceLanguageCode !== 'en') {
       await importTwoLanguages(setDefaultCountry, setCountries, setError);
 
@@ -32,13 +34,13 @@ export const CountryBottomSheet = () => {
     }
 
     importSingleLanguage(setDefaultCountry, setCountries, setError);
-  };
+  }, []);
 
   if (!deviceLanguageCode) {
     return null;
   }
 
-  if (!countries || !defaultCountry) {
+  if (!memoizedCountries || !defaultCountry) {
     importCountries();
 
     return null;
@@ -54,14 +56,14 @@ export const CountryBottomSheet = () => {
         ref={sheetRef}
         snapPoints={SNAP_POINTS}
         keyboardBehavior="fillParent">
-        {Array.isArray(countries) ? (
+        {Array.isArray(memoizedCountries) ? (
           <SingleLangCountryList
-            countries={countries}
+            countries={memoizedCountries}
             defaultCountry={defaultCountry}
           />
         ) : (
           <TwoLangCountryList
-            countries={countries}
+            countries={memoizedCountries}
             defaultCountry={defaultCountry}
           />
         )}

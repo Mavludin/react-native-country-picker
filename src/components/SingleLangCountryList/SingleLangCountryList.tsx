@@ -1,18 +1,18 @@
-import {BottomSheetFlatList, BottomSheetTextInput} from '@gorhom/bottom-sheet';
-import React, {useState} from 'react';
+import {BottomSheetFlatList} from '@gorhom/bottom-sheet';
+import React, {useCallback, useState} from 'react';
 import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
 import {Country} from '../Country/Country';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {filterSingleLanguageList} from '../../utils/filterSingleLanguageList';
-import {SearchIcon} from '../SearchIcon/SearchIcon';
 import {CountryItem} from '../../libs/world_countries/types';
+import {SearchInput} from '../SearchInput/SearchInput';
 
 type Props = {
   countries: CountryItem[];
   defaultCountry: CountryItem;
 };
 
-export const SingleLangCountryList = ({countries, defaultCountry}: Props) => {
+const SingleLangCountryListMemo = ({countries, defaultCountry}: Props) => {
   const [selectedCountry, setSelectedCountry] = useState<CountryItem | null>(
     null,
   );
@@ -23,29 +23,24 @@ export const SingleLangCountryList = ({countries, defaultCountry}: Props) => {
     setSelectedCountry(item);
   };
 
-  const handleChange = (text: string) => {
-    if (text.length < 1) {
-      setFilteredList(null);
+  const handleInputChange = useCallback(
+    (text: string) => {
+      if (text.length < 1) {
+        setFilteredList(null);
 
-      return;
-    }
-    const lowerCasedInputText = text.toLowerCase();
+        return;
+      }
+      const lowerCasedInputText = text.toLowerCase();
 
-    // If there is only the English language
-    filterSingleLanguageList(lowerCasedInputText, countries, setFilteredList);
-  };
+      // If there is only the English language
+      filterSingleLanguageList(lowerCasedInputText, countries, setFilteredList);
+    },
+    [countries],
+  );
 
   return (
     <>
-      <View style={styles.searchContainer}>
-        <SearchIcon />
-        <BottomSheetTextInput
-          onChangeText={handleChange}
-          style={styles.input}
-          placeholder="Search"
-        />
-      </View>
-
+      <SearchInput handleChange={handleInputChange} />
       <BottomSheetFlatList
         data={filteredList ?? countries}
         ListHeaderComponent={
@@ -71,20 +66,9 @@ export const SingleLangCountryList = ({countries, defaultCountry}: Props) => {
 };
 
 const styles = StyleSheet.create({
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderBottomColor: '#CBCBCB',
-    borderBottomWidth: 1,
-    paddingHorizontal: 15,
-  },
-  input: {
-    fontSize: 20,
-    lineHeight: 20,
-    color: '#9A9A9A',
-    marginLeft: 10,
-  },
   contentContainer: {
     paddingHorizontal: 10,
   },
 });
+
+export const SingleLangCountryList = React.memo(SingleLangCountryListMemo);

@@ -1,19 +1,19 @@
-import {BottomSheetFlatList, BottomSheetTextInput} from '@gorhom/bottom-sheet';
-import React, {useState} from 'react';
+import {BottomSheetFlatList} from '@gorhom/bottom-sheet';
+import React, {useCallback, useState} from 'react';
 import {deviceLanguageCode} from '../../utils/countries';
 import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
 import {Country} from '../Country/Country';
-import {StyleSheet, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {filterTwoLanguageList} from '../../utils/filterTwoLanguageList';
-import {SearchIcon} from '../SearchIcon/SearchIcon';
 import {CountryItem, DoubleCountryItem} from '../../libs/world_countries/types';
+import {SearchInput} from '../SearchInput/SearchInput';
 
 type Props = {
   countries: DoubleCountryItem;
   defaultCountry: CountryItem;
 };
 
-export const TwoLangCountryList = ({countries, defaultCountry}: Props) => {
+const TwoLangCountryListMemo = ({countries, defaultCountry}: Props) => {
   const [selectedCountry, setSelectedCountry] = useState<CountryItem | null>(
     null,
   );
@@ -26,53 +26,48 @@ export const TwoLangCountryList = ({countries, defaultCountry}: Props) => {
     setSelectedCountry(item);
   };
 
-  const handleChange = (text: string) => {
-    if (text.length < 1) {
-      setFilteredList(null);
+  const handleInputChange = useCallback(
+    (text: string) => {
+      if (text.length < 1) {
+        setFilteredList(null);
 
-      return;
-    }
+        return;
+      }
 
-    const lowerCasedInputText = text.toLowerCase();
+      const lowerCasedInputText = text.toLowerCase();
 
-    // If there are 2 languages
-    const isEnglish = /[a-z]/gi.test(text);
-    const deviceLanguageCountryList = [...countries[deviceLanguageCode]];
+      // If there are 2 languages
+      const isEnglish = /[a-z]/gi.test(text);
+      const deviceLanguageCountryList = [...countries[deviceLanguageCode]];
 
-    // If user enters English characters
-    if (isEnglish) {
-      filterTwoLanguageList(
-        lowerCasedInputText,
-        countries,
-        deviceLanguageCountryList,
-        setFilteredList,
-      );
+      // If user enters English characters
+      if (isEnglish) {
+        filterTwoLanguageList(
+          lowerCasedInputText,
+          countries,
+          deviceLanguageCountryList,
+          setFilteredList,
+        );
 
-      return;
-    }
+        return;
+      }
 
-    // If user enters characters in the device language
-    const filteredResult = deviceLanguageCountryList.filter(country => {
-      return country.name.toLowerCase().includes(lowerCasedInputText);
-    }, []);
+      // If user enters characters in the device language
+      const filteredResult = deviceLanguageCountryList.filter(country => {
+        return country.name.toLowerCase().includes(lowerCasedInputText);
+      }, []);
 
-    setFilteredList({
-      ...countries,
-      [deviceLanguageCode]: filteredResult,
-    });
-  };
+      setFilteredList({
+        ...countries,
+        [deviceLanguageCode]: filteredResult,
+      });
+    },
+    [countries],
+  );
 
   return (
     <>
-      <View style={styles.searchContainer}>
-        <SearchIcon />
-        <BottomSheetTextInput
-          onChangeText={handleChange}
-          style={styles.input}
-          placeholder="Search"
-        />
-      </View>
-
+      <SearchInput handleChange={handleInputChange} />
       <BottomSheetFlatList
         data={
           filteredList?.[deviceLanguageCode] ?? countries[deviceLanguageCode]
@@ -100,20 +95,9 @@ export const TwoLangCountryList = ({countries, defaultCountry}: Props) => {
 };
 
 const styles = StyleSheet.create({
-  searchContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    borderBottomColor: '#CBCBCB',
-    borderBottomWidth: 1,
-    paddingHorizontal: 15,
-  },
-  input: {
-    fontSize: 20,
-    lineHeight: 20,
-    color: '#9A9A9A',
-    marginLeft: 10,
-  },
   contentContainer: {
     paddingHorizontal: 10,
   },
 });
+
+export const TwoLangCountryList = React.memo(TwoLangCountryListMemo);
