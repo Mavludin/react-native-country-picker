@@ -5,11 +5,14 @@ import {HeaderCountry} from '../HeaderCountry/HeaderCountry';
 import {Country} from '../Country/Country';
 import {StyleSheet} from 'react-native';
 import {filterTwoLanguageList} from '../../utils/filterTwoLanguageList';
-import {CountryItem, DoubleCountryItem} from '../../libs/world_countries/types';
+import {
+  CountryItem,
+  TwoLangCountryItem,
+} from '../../libs/world_countries/types';
 import {SearchInput} from '../SearchInput/SearchInput';
 
 type Props = {
-  countries: DoubleCountryItem;
+  countries: TwoLangCountryItem;
   defaultCountry: CountryItem;
 };
 
@@ -18,7 +21,7 @@ const TwoLangCountryListMemo = ({countries, defaultCountry}: Props) => {
     null,
   );
 
-  const [filteredList, setFilteredList] = useState<DoubleCountryItem | null>(
+  const [filteredList, setFilteredList] = useState<TwoLangCountryItem | null>(
     null,
   );
 

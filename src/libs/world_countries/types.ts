@@ -19,4 +19,4 @@ export type CountryItem = {
   name: string;
 };
 
-export type DoubleCountryItem = Record<Partial<LanguageCode>, CountryItem[]>;
+export type TwoLangCountryItem = Record<Partial<LanguageCode>, CountryItem[]>;

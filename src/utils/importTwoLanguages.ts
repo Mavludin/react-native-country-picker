@@ -1,4 +1,4 @@
-import {CountryItem, DoubleCountryItem} from '../libs/world_countries/types';
+import {CountryItem, TwoLangCountryItem} from '../libs/world_countries/types';
 import {
   countriesByLanguage,
   deviceCountryCode,
@@ -7,7 +7,7 @@ import {
 
 export const importTwoLanguages = async (
   setDefaultCountry: (value?: CountryItem) => void,
-  setCountries: (value?: DoubleCountryItem | CountryItem[]) => void,
+  setCountries: (value?: TwoLangCountryItem | CountryItem[]) => void,
   setError: (value: string | null) => void,
 ) => {
   try {
@@ -19,7 +19,7 @@ export const importTwoLanguages = async (
     const result = {
       [deviceLanguageCode]: deviceLanguageCountryList.default,
       en: englishCountryList.default,
-    } as DoubleCountryItem;
+    } as TwoLangCountryItem;
 
     setDefaultCountry(
       result?.[deviceLanguageCode]?.find(

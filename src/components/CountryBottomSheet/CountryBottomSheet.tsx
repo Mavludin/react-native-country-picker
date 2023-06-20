@@ -6,7 +6,10 @@ import {View, useWindowDimensions, Text} from 'react-native';
 import {deviceLanguageCode} from '../../utils/countries';
 import {importTwoLanguages} from '../../utils/importTwoLanguages';
 import {importSingleLanguage} from '../../utils/importSingleLanguage';
-import {CountryItem, DoubleCountryItem} from '../../libs/world_countries/types';
+import {
+  CountryItem,
+  TwoLangCountryItem,
+} from '../../libs/world_countries/types';
 import {SingleLangCountryList} from '../SingleLangCountryList/SingleLangCountryList';
 import {TwoLangCountryList} from '../TwoLangCountryList/TwoLangCountryList';
 
@@ -18,7 +21,7 @@ export const CountryBottomSheet = () => {
   const {height: screenHeight} = useWindowDimensions();
 
   const [countries, setCountries] = useState<
-    DoubleCountryItem | CountryItem[]
+    TwoLangCountryItem | CountryItem[]
   >();
   const [defaultCountry, setDefaultCountry] = useState<CountryItem>();
 

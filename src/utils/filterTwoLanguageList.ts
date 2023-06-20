@@ -2,8 +2,7 @@ import {deviceLanguageCode} from './countries';
 
 import {
   CountryItem,
-  DoubleCountryItem,
-  SingleCountryItem,
+  TwoLangCountryItem,
   LanguageCode,
 } from '../libs/world_countries/types';
 
@@ -11,7 +10,7 @@ export const filterTwoLanguageList = (
   lowerCasedInputText: string,
   countries: Record<Partial<LanguageCode>, CountryItem[]>,
   deviceLanguageCountryList: any[],
-  setFilteredList: (value?: DoubleCountryItem | SingleCountryItem) => void,
+  setFilteredList: (value: TwoLangCountryItem | null) => void,
 ) => {
   const englishCountryList = [...countries?.en];
 
